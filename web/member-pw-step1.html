@@ -45,59 +45,43 @@
     <main id="main" class="push py-5 py-lg-10 bg-light">
         <div class="container">
             <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="title">
+                        重設密碼
+                    </div>
+                </div>
                 <div class="col-12 col-lg-8">
-                    <div class="bg-white">
-                        <div class="row no-gutters">
-                            <div class="col-12 col-md-6 p-5">
-                                <div class="lead font-weight-bold mb-2">快速註冊</div>
-                                <div class="">
-                                    <a class="btn btn-block btn-lg btn-fb p-0" href="#">
-                                        <div class="float-left pl-xl-5 pl-0">
-                                            <i class="fab fa-facebook-f fa-fw"></i>
-                                        </div>
-                                        <span>以Facebook帳號註冊</span>
-                                    </a>
-                                    <a class="btn btn-block btn-lg btn-google p-0" href="#">
-                                        <div class="float-left pl-xl-5 pl-0">
-                                            <i class="fab fa-google fa-fw"></i>
-                                        </div>
-                                        <span>以Google帳號註冊</span>
-                                    </a>
-                                </div>
-                                <div class="text-or mt-4 mb-2 text-center">
-                                    <span>或</span>
-                                </div>
-                                <div class="lead font-weight-bold mb-2">以你的電子郵件地址註冊</div>
+                    <div class="box px-4 py-5 py-lg-10">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-12 text-center">
+                                <p>
+                                    請輸入註冊時填寫的手機號碼，<br>
+                                    系統將發送簡訊驗證碼至您的手機內
+                                </p>
+                            </div>
+                            <div class="col-12 col-lg-6">
                                 <form>
-                                    <div class="form-group mb-2">
-                                        <input class="form-control bg-gray-2 py-2 border-0" type="email" placeholder="電子信箱">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control bg-light" placeholder="會員帳號 (請輸入Email)" value="" required>
                                     </div>
-                                    <div class="form-group mb-2">
-                                        <input class="form-control bg-gray-2 py-2 border-0" type="text" placeholder="姓名">
+                                    <div class="form-group">
+                                        <input type="tel" class="form-control bg-light" placeholder="手機號碼" value="" required>
                                     </div>
-                                    <div class="form-group mb-2">
-                                        <input class="form-control bg-gray-2 py-2 border-0" type="password" placeholder="密碼">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control bg-light" placeholder="請輸入驗證碼" value="" required>
                                     </div>
-                                    <div class="form-group mb-2">
-                                        <div class="text-muted font-sm">
-                                        註冊前請詳閱 <a href="privacy.html" target="_blank"><u>隱私權政策</u></a>
-                                        </div>
+                                    <div class="form-group">
+                                        <img class="img-fluid" src="assets/img/uploads/captcha.png" alt="">
+                                        <a class="ml-2" href=""><u>更新驗證碼</u></a>
                                     </div>
-                                    <div class="row no-gutters">
-                                        <div class="col-12">
-                                            <a class="btn btn-warning btn-lg btn-block" href="member-regist-active.html">註冊</a>
-                                        </div>
+                                    <div class="form-group">
+                                        <a class="btn btn-block btn-warning" href="javascript:void();" data-toggle="modal" data-target="#modalAlert">下一步</a>
                                     </div>
                                 </form>
-                            </div>
-                            <div class="col-12 col-md-6 text-center bg-regist"></div>
-                        </div>
-                    </div>
 
-                </div>
-                <div class="col-12 mt-10">
-                    <div class="text-center">
-                        <a href="member-login.html"><u>已經是會員，由此登入</u></a>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -114,6 +98,25 @@
         <!-- module: ./common-footer -->
     </footer>
 
+    <div class="modal fade" id="modalAlert" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <div class="h4 text-ci-dark w-100">
+                        <i class="fas fa-check"></i> 簡訊驗證碼已發送
+                    </div>
+                </div>
+                <div class="modal-body text-center">
+                    <p>
+                        已用手機簡訊，將重設密碼的操作提示<br>
+                        傳送至您所輸入的手機門號中
+                    </p>
+                    <a class="btn btn-warning btn-block" href="javascript:void();" data-dismiss="modal">好</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- global -->
     <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
     <script src="assets/js/vendor/bootstrap-touchspin.min.js"></script>
@@ -129,4 +132,3 @@
 
 </body>
 </html>
-
