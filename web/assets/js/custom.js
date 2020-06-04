@@ -37,6 +37,12 @@ $(document).ready(function(){
 
 jQuery(document).ready(function($) {
 
+    $('.anchor').click(function(){
+		$('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top - 100}, 750);
+		return false;
+	});
+
     $('#header').hcSticky({
         stickTo: 'body'
     });
