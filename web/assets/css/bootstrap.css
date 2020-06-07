@@ -4194,7 +4194,7 @@ a.close.disabled {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 15%;
+  width: 5%;
   color: #fff;
   text-align: center;
   opacity: 0.5;
@@ -4235,8 +4235,8 @@ a.close.disabled {
   display: flex;
   justify-content: center;
   padding-left: 0;
-  margin-right: 15%;
-  margin-left: 15%;
+  margin-right: 5%;
+  margin-left: 5%;
   list-style: none; }
 .carousel-indicators li {
   box-sizing: content-box;
@@ -4247,7 +4247,7 @@ a.close.disabled {
   margin-left: 3px;
   text-indent: -999px;
   cursor: pointer;
-  background-color: #fff;
+  background-color: #f5ba23;
   background-clip: padding-box;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
