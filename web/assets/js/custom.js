@@ -40,6 +40,8 @@ $(document).ready(function(){
             $(this).find('iframe').attr('src', src);
         });
     });
+
+    $('input[type="tel"]').mask('0000-000000');
 });
 
 jQuery(document).ready(function($) {
@@ -120,5 +122,4 @@ jQuery(document).ready(function($) {
     $(".carousel").swipeleft(function() {
         $(".carousel").carousel('next');
     });
-
 });

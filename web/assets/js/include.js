@@ -6,3 +6,4 @@ $("#nav-mobile").load("module/nav-mobile.html");
 
 //Modal
 $("#modal-cart").load("module/modal-cart.html");
+$("#modal-message").load("module/modal-message.html");
