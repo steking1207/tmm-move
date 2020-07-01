@@ -433,40 +433,6 @@ select {
   .table-list.table-list-evaluate tbody tr td.td-action {
     padding-left: 10px; } }
 
-@media (max-width: 1199.98px) {
-  .table-record-point tbody td:nth-of-type(1):before {
-    content: "積點日期"; }
-  .table-record-point tbody td:nth-of-type(2):before {
-    content: "消費內容"; }
-  .table-record-point tbody td:nth-of-type(3):before {
-    content: "商品建議售價"; }
-  .table-record-point tbody td:nth-of-type(4):before {
-    content: "通路"; }
-  .table-record-point tbody td:nth-of-type(5):before {
-    content: "獲得紅利積點"; }
-  .table-record-point tbody td:nth-of-type(6):before {
-    content: "活動紀錄"; }
-  .table-record-point tbody td:nth-of-type(7):before {
-    content: "有效期限"; }
-  .table-record-point tfoot {
-    border-top: none; }
-  .table-record-point tfoot td:nth-of-type(1), .table-record-point tfoot td:nth-of-type(2), .table-record-point tfoot td:nth-of-type(4), .table-record-point tfoot td:nth-of-type(6), .table-record-point tfoot td:nth-of-type(7) {
-    display: none; }
-  .table-record-point tfoot td:nth-of-type(3):before {
-    content: "商品建議售價"; }
-  .table-record-point tfoot td:nth-of-type(5):before {
-    content: "商品建議售價"; }
-
-  .table-record-change tbody td:nth-of-type(1):before {
-    content: "兌換日期"; }
-  .table-record-change tbody td:nth-of-type(2):before {
-    content: "兌換商品內容"; }
-  .table-record-change tbody td:nth-of-type(3):before {
-    content: "兌換點數"; }
-  .table-record-change tbody td:nth-of-type(4):before {
-    content: "數量"; }
-  .table-record-change tbody td:nth-of-type(5):before {
-    content: "小計"; } }
 .text-or {
   position: relative;
   color: #adb5bd;

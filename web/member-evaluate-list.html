@@ -181,25 +181,8 @@
     <script src="assets/js/vendor/fresco.min.js"></script>
     <script src="assets/js/custom.js"></script>
 
-    <!-- Single -->
-    <script>
-        $('#company input[type=checkbox]').change(function(e){
-            if ($('#company input[type=checkbox]:checked').length > 3) {
-                $(this).prop('checked', false)
-//                alert("最多選擇3家");
-                $('.modal-alert').modal('show')
-            }
-        })
-    </script>
-
     <!-- module include -->
     <script src="assets/js/include.js"></script>
-    <script>
-        $('.date').datepicker({
-            format: 'yyyy/mm/dd',
-            language: 'zh-TW',
-        });
-    </script>
 
 </body>
 </html>
