@@ -27,42 +27,59 @@
 
 <body id="top">
 
+    <nav class="pushy pushy-left bg-white">
+        <!-- module: nav-mobile -->
+        <div id="nav-mobile"></div>
+        <!-- module: ./nav-mobile -->
+    </nav>
+
+    <div class="site-overlay"></div>
+
     <header id="header" class="">
         <div class="bar mb-1"></div>
         <div class="container pb-2">
-            <div class="row justify-content-between align-items-center">
+            <div class="row justify-content-between align-items-center no-gutters">
                 <div class="col-2">
-                    <a class="h3" href="member-regist.html">
-                        <img class="img-fluid" src="assets/img/ui/icon-back.svg" alt="">
+                    <a class="h3 menu-btn" href="javascript:void();">
+                        <img class="img-fluid" src="assets/img/ui/icon-menu.svg" alt="">
                     </a>
                 </div>
                 <div class="col-8 text-center">
-                    <div class="h5 font-weight-bold m-0 pt-2">
-                        會員註冊
-                    </div>
+                    <a class="d-block" href="index.html">
+                        <img class="img-fluid logo" src="assets/img/ui/logo.svg" alt="崔媽媽評鑑優良搬家公司">
+                    </a>
                 </div>
-                <div class="col-2 text-right">
+                <div class="col-1 text-right">
+                    <div class="pos-r-t mt-n2 mr-n1">
+                        <span class="badge badge-danger rounded">10</span>
+                    </div>
+                    <a class="h3" href="message-list.html">
+                        <img class="img-fluid" src="assets/img/ui/icon-message.svg" alt="">
+                    </a>
                 </div>
             </div>
         </div>
     </header>
 
-    <main id="main" class="py-5 bg-light">
+    <main id="main" class="py-5">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-10">
-                    <div class="box px-4 py-10">
-                        <div class="row align-items-center justify-content-center">
-                            <div class="col-12 text-center">
-                                <div class="h5 mb-4">林聲聲 先生/女士您好:</div>
-                                <p>
-                                    感謝您註冊崔媽媽搬家網的會員。<br>
-                                    請點選下方鏈結，啟動並填寫完整個人資料，正式啟動會員。
-                                </p>
-                                <a class="btn btn-outline-warning btn-block" href="member-regist-done.html">
-                                    連結
-                                </a>
-                            </div>
+                <div class="col-12">
+                    <p>
+                        <img class="img-fluid" src="assets/img/ui/evaluate-img.png" alt="">
+                    </p>
+                    <div class="h6">
+
+                        填寫回頭車詢價單，崔媽媽基金會搬家評鑑部<br>將會儘速媒合搬家公司為您作電話報價。<br>報價完成後，如符合您的需求，再向搬家公司訂車即可。<br>提醒您，下載【搬家GO Easy】，登入會員隨時接收搬家報價訊息。
+                    </div>
+
+                </div>
+                <div class="col-12">
+                    <div class="row no-gutters justify-content-center mt-6">
+                        <div class="col-12">
+                            <a class="btn btn-warning btn-block py-2" href="evaluate-step1.html">
+                                開始搬家估價 <img class="img-fluid icon icon-white icon-md" src="assets/img/ui/icon-arw-right.svg" alt="">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -81,6 +98,15 @@
     <script src="assets/js/vendor/jquery.mask.min.js"></script>
     <script src="assets/js/vendor/fresco.min.js"></script>
     <script src="assets/js/custom.js"></script>
+
+    <!-- single -->
+    <script>
+        $('.btn-add').click(function (e) {
+            var id = ($(this).attr("id"));
+            $(this).html( $(this).html() == '加入' ? '取消' :'加入' );
+            $(this).toggleClass('bg-light border text-muted');
+        });
+    </script>
 
     <!-- module include -->
     <script src="assets/js/include.js"></script>
