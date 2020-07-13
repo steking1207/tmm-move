@@ -38,48 +38,63 @@
     <header id="header" class="">
         <div class="bar mb-1"></div>
         <div class="container pb-2">
-            <div class="row justify-content-between align-items-center no-gutters">
+            <div class="row justify-content-between align-items-center">
                 <div class="col-2">
-                    <a class="h3 menu-btn" href="javascript:void();">
-                        <img class="img-fluid" src="assets/img/ui/icon-menu.svg" alt="">
+                    <a class="h3" href="#" onclick="window.history.go(-1)">
+                        <img class="img-fluid" src="assets/img/ui/icon-back.svg" alt="">
                     </a>
                 </div>
                 <div class="col-8 text-center">
-                    <a class="d-block" href="index.html">
-                        <img class="img-fluid logo" src="assets/img/ui/logo.svg" alt="崔媽媽評鑑優良搬家公司">
-                    </a>
+                    <div class="h5 font-weight-bold m-0 pt-2">
+                        自行輸入項目
+                    </div>
                 </div>
                 <div class="col-2 text-right">
-                    <div class="pos-r-t mt-n2 mr-n1">
-                        <span class="badge badge-danger rounded">10</span>
-                    </div>
-                    <a class="h3" href="message-list.html">
-                        <img class="img-fluid" src="assets/img/ui/icon-message.svg" alt="">
-                    </a>
                 </div>
             </div>
         </div>
     </header>
 
-    <main id="main" class="py-5 bg-light">
+    <main id="main" class="pb-5">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-12">
-                    <div class="box p-2 text-center">
-                    <p>
-                        <img class="img-fluid" src="assets/img/ui/evaluate-img.png" alt="">
-                    </p>
-                    <div>
-                        填寫回頭車詢價單，崔媽媽基金會搬家評鑑部將會儘速媒合搬家公司為您作電話報價。<br>報價完成後，如符合您的需求，再向搬家公司訂車即可。<br>提醒您，下載【搬家GO Easy】，登入會員隨時接收搬家報價訊息。
-                    </div>
+                <div class="col-12 px-0">
+                    <div class="list-group">
+                        <div class="list-group-item list-group-item-danger">
+                            (此區系統不計算車數)
+                        </div>
+                        <div class="list-group-item d-flex justify-content-between align-items-center">
+                            <div class="col-7">
+                                <input class="form-control" type="text" placeholder="品項名稱">
+                            </div>
+                            <div class="col-5">
+                                <input id="" type="text" value="1" class="form-control text-center input-number">
+                            </div>
+                        </div>
+                        <div class="list-group-item d-flex justify-content-between align-items-center">
+                            <div class="col-7">
+                                <input class="form-control" type="text" placeholder="品項名稱">
+                            </div>
+                            <div class="col-5">
+                                <input id="" type="text" value="1" class="form-control text-center input-number">
+                            </div>
+                        </div>
+                        <div class="list-group-item d-flex justify-content-between align-items-center">
+                            <div class="col-7">
+                                <input class="form-control" type="text" placeholder="品項名稱">
+                            </div>
+                            <div class="col-5">
+                                <input id="" type="text" value="1" class="form-control text-center input-number">
+                            </div>
+                        </div>
                     </div>
 
                 </div>
                 <div class="col-12">
                     <div class="row no-gutters justify-content-center mt-6">
                         <div class="col-12">
-                            <a class="btn btn-warning btn-block py-2" href="evaluate-step1.html">
-                                開始搬家估價 <img class="img-fluid icon icon-white icon-md" src="assets/img/ui/icon-arw-right.svg" alt="">
+                            <a class="btn btn-warning btn-block py-2" href="#">
+                                <img class="img-fluid icon icon-white icon-md" src="assets/img/ui/icon-check.svg" alt=""> 完成
                             </a>
                         </div>
                     </div>
@@ -99,15 +114,6 @@
     <script src="assets/js/vendor/jquery.mask.min.js"></script>
     <script src="assets/js/vendor/fresco.min.js"></script>
     <script src="assets/js/custom.js"></script>
-
-    <!-- single -->
-    <script>
-        $('.btn-add').click(function (e) {
-            var id = ($(this).attr("id"));
-            $(this).html( $(this).html() == '加入' ? '取消' :'加入' );
-            $(this).toggleClass('bg-light border text-muted');
-        });
-    </script>
 
     <!-- module include -->
     <script src="assets/js/include.js"></script>
