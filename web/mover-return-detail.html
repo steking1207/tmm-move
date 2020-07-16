@@ -49,13 +49,10 @@
                     <div class="nav-responsive mb-2">
                         <ul class="nav nav-submenu justify-content-center">
                             <li class="nav-item">
-                                <a class="nav-link" href="member-info.html">帳號設定</a>
+                                <a class="nav-link" href="member-evaluate-list.html">搬家估價單</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="member-evaluate-list.html">搬家估價單</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="member-return-list.html">回頭車估價單</a>
+                                <a class="nav-link active" href="member-return-list.html">回頭車估價單</a>
                             </li>
                         </ul>
                     </div>
@@ -63,25 +60,34 @@
                         <span>搬家估價</span>
                     </div>
                     <div class="h4 text-center text-secondary mb-6">
-                        搬家估價單
+                        回頭車估價單
                     </div>
                 </div>
                 <div class="col-12">
-                    <div class="box mb-6 px-2 border-success">
-                        <div class="row border-top p-2">
+                    <div class="box mb-6 px-2 border-danger">
+                        <div class="row border-bottom p-2">
                             <div class="col-12 col-lg-6 mb-2 mb-lg-0">
                                 <div class="h5">
-                                    <span class="badge badge-success">已結束</span>
+                                    <span class="badge badge-danger">進行中</span>
                                 </div>
                                 <small class="text-secondary">
                                     <span>2017-12-18 11:32:09</span>
                                     <span class="mx-2">王大明</span>
-                                    <span>訂單編號: 202004130001</span>
+                                    <span>訂單號: 202004130001</span>
                                 </small>
                             </div>
                             <div class="col text-left text-lg-right">
                                 <small class="text-secondary">3.49噸貨車</small>
                                 <div class="text-black"><span class="lead text-danger font-weight-bold">0.2</span> 車</div>
+                            </div>
+                            <div class="col text-left text-lg-right">
+                                <small class="text-secondary">預計報價</small>
+                                <div class="input-group input-group-sm">
+                                    <input type="text" class="form-control" placeholder="報價金額">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-warning" type="button">送出</button>
+                                    </div>
+                                </div>
                             </div>
 
                         </div>
@@ -129,68 +135,12 @@
                                 <div class="text-black">路寬兩米，位於巷尾</div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="box mb-6 p-4">
-                        <div class="mb-4 text-center">
-                            <div class="h5 text-primary-dark font-weight-bold">
-                                所選搬家公司
-                            </div>
-                        </div>
-                        <div class="row" id="company">
-                            <div class="col-12 col-lg-4 my-2 box-select">
-                                <div class="row no-gutters align-items-center post border p-2">
-                                    <div class="col-5 text-center">
-                                        <img class="img-fluid img-logo" src="assets/img/uploads/company-sm-01.jpg" alt="">
-                                    </div>
-                                    <div class="col-7 p-2">
-                                        <span class="badge badge-light mb-1">台北</span>
-                                        <div class="h6 text-row-1 text-dark">誠品搬家公司</div>
-                                        <div class="font-sm text-row-1 text-muted">02-24302545</div>
-                                    </div>
-                                    <div class="col-12 mt-2">
-                                        <a class="btn btn-block btn-outline-warning " href="#" data-toggle="modal" data-target=".modal-message">
-                                            廠商回覆訊息
-                                            <span class="badge badge-danger badge-pill rounded">14</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-lg-4 my-2 box-select">
-                                <div class="row no-gutters align-items-center post border p-2">
-                                    <div class="col-5 text-center">
-                                        <img class="img-fluid img-logo" src="assets/img/uploads/company-sm-02.jpg" alt="">
-                                    </div>
-                                    <div class="col-7 p-2">
-                                        <span class="badge badge-light mb-1">台北</span>
-                                        <div class="h6 text-row-1 text-dark">誠品搬家公司</div>
-                                        <div class="font-sm text-row-1 text-muted">02-24302545</div>
-                                    </div>
-                                    <div class="col-12 mt-2">
-                                        <a class="btn btn-block btn-outline-warning " href="#" data-toggle="modal" data-target=".modal-message">
-                                            廠商回覆訊息
-                                            <span class="badge badge-danger badge-pill rounded">0</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-lg-4 my-2 box-select">
-                                <div class="row no-gutters align-items-center post border p-2">
-                                    <div class="col-5 text-center">
-                                        <img class="img-fluid img-logo" src="assets/img/uploads/company-sm-03.jpg" alt="">
-                                    </div>
-                                    <div class="col-7 p-2">
-                                        <span class="badge badge-light mb-1">台北</span>
-                                        <div class="h6 text-row-1 text-dark">誠品搬家公司</div>
-                                        <div class="font-sm text-row-1 text-muted">02-24302545</div>
-                                    </div>
-                                    <div class="col-12 mt-2">
-                                        <a class="btn btn-block btn-outline-warning " href="#" data-toggle="modal" data-target=".modal-message">
-                                            廠商回覆訊息
-                                            <span class="badge badge-danger badge-pill rounded">2</span>
-                                        </a>
-                                    </div>
-                                </div>
+                        <div class="row border-top p-2">
+                            <div class="col-12">
+                                <a class="btn btn-block btn-outline-warning " href="#" data-toggle="modal" data-target=".modal-message">
+                                    客戶回覆訊息
+                                    <span class="badge badge-danger badge-pill rounded">14</span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -201,55 +151,21 @@
                                 所選家具
                             </div>
                         </div>
-                        <div class="nav-responsive">
-                            <ul class="nav nav-submenu justify-content-center">
-                                <li class="nav-item">
-                                    <a class="nav-link active" data-toggle="tab" href="#tab-content-chair">桌椅類</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#tab-content-appliances">家電類</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#tab-content-cabinet">櫥櫃類</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#tab-content-bed">床組類</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#tab-content-kitchen">廚房類</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#tab-content-computer">電腦類</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#tab-content-decoration">裝飾類</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#tab-content-box">紙箱類</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#tab-content-misc">雜物類</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#tab-content-special">特殊類</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#tab-content-custom">自行輸入項目</a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="tab-content">
-                            <div class="tab-pane fade show active" id="tab-content-chair" role="tabpanel">
                         <table class="table table-furniture">
                         <thead>
                             <tr class="table-warning">
                                 <th class="td-name">品項名稱</th>
                                 <th class="td-desc">品項描述</th>
+                                <th class="text-center td-size">長(cm)</th>
+                                                <th class="text-center td-size">寬(cm)</th>
+                                                <th class="text-center td-size">高(cm)</th>
                                 <th class="text-center td-count">數量</th>
                             </tr>
                         </thead>
                         <tbody>
+                            <tr>
+                                <td colspan="6" class="table-secondary font-weight-bold">桌椅類</td>
+                            </tr>
                             <tr class="item">
                                 <td class="td-name">
                                     <div class="media">
@@ -262,6 +178,15 @@
                                 </td>
                                 <td class="td-desc">
                                     <small>一二三四五六七八九十一二三四五六七八九十</small>
+                                </td>
+                                <td class="text-center td-size">
+                                    -
+                                </td>
+                                <td class="text-center td-size">
+                                    -
+                                </td>
+                                <td class="text-center td-size">
+                                    -
                                 </td>
                                 <td class="text-center td-count">
                                     1
@@ -280,25 +205,82 @@
                                 <td class="td-desc">
                                     <small>一二三四五六七八九十一二三四五六七八九十</small>
                                 </td>
+                                <td class="text-center td-size">
+                                    -
+                                </td>
+                                <td class="text-center td-size">
+                                    -
+                                </td>
+                                <td class="text-center td-size">
+                                    -
+                                </td>
                                 <td class="text-center td-count">
                                     2
                                 </td>
                             </tr>
+                            <tr>
+                                <td colspan="6" class="table-secondary font-weight-bold">紙箱類</td>
+                            </tr>
+                            <tr class="item">
+                                <td class="td-name">
+                                    <div class="media">
+                                        <img class="img-furniture mr-2" src="assets/img/icons/box-class/icon-carton-box-s.png" alt="紙箱-小型(1才)">
+                                        <div class="media-body">
+                                            紙箱
+                                            <div class="font-sm text-muted">小型(1才)</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="td-desc">
+                                    <small>一二三四五六七八九十一二三四五六七八九十</small>
+                                </td>
+                                <td class="text-center td-size">
+                                    100
+                                </td>
+                                <td class="text-center td-size">
+                                    100
+                                </td>
+                                <td class="text-center td-size">
+                                    100
+                                </td>
+                                <td class="text-center td-count">
+                                    10
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="6" class="table-secondary font-weight-bold">自行輸入項目</td>
+                            </tr>
+                            <tr class="item">
+                                <td class="td-name">
+                                    <div class="media">
+                                        <div class="media-body">
+                                            折疊椅
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="td-desc">
+                                    <small>一二三四五六七八九十一二三四五六七八九十</small>
+                                </td>
+                                <td class="text-center td-size">
+                                    50
+                                </td>
+                                <td class="text-center td-size">
+                                    95
+                                </td>
+                                <td class="text-center td-size">
+                                    25
+                                </td>
+                                <td class="text-center td-count">
+                                    1
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
-                            </div>
-                            <div class="tab-pane fade" id="tab-content-appliances" role="tabpanel">
-                                <div class="text-center p-4">
-                                    <div class="alert alert-secondary m-0" role="alert">
-                                        無項目
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
 
                     <div class="mt-4 text-center">
-                        <a class="btn btn-outline-warning px-10" href="member-evaluate-list.html">返回</a>
+                        <a class="btn btn-warning px-10" href="mover-evaluate-print.html" target="_blank">列印</a>
+                        <a class="btn btn-outline-warning px-10" href="mover-return-list.html">返回</a>
                     </div>
                 </div>
             </div>

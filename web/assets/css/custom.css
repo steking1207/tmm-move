@@ -430,6 +430,8 @@ select {
     content: "預估車數"; }
   .table-list.table-list-evaluate tbody td.td-talk:before {
     content: "廠商回應"; }
+  .table-list.table-list-evaluate tbody td.td-ctalk:before {
+    content: "客戶回應"; }
   .table-list.table-list-evaluate tbody tr td.td-action {
     padding-left: 10px; } }
 
