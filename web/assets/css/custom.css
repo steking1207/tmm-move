@@ -777,18 +777,36 @@ i.h1, i.h2, i.h3, i.h4, i.h5, i.h6 {
 .custom-radio-v .custom-control-label::after, .custom-checkbox-v .custom-control-label::after {
   position: absolute; }
 
+[data-toggle="collapse"] {
+  background: #fff;
+  color: #343a40; }
 [data-toggle="collapse"].link:after {
   display: none; }
 [data-toggle="collapse"]:after {
   float: right;
   font-family: "Font Awesome\ 5 Free";
   font-weight: 900; }
+[data-toggle="collapse"][aria-expanded="true"] {
+  background: #f5ba23;
+  color: #fff; }
 [data-toggle="collapse"][aria-expanded="true"]:after {
   content: ""; }
+[data-toggle="collapse"][aria-expanded="false"] {
+  background: #fff !important;
+  color: #343a40; }
 [data-toggle="collapse"][aria-expanded="false"]:after {
   content: ""; }
 [data-toggle="collapse"]:after {
   content: ""; }
+[data-toggle="collapse"]:hover {
+  background: #f5ba23 !important;
+  color: #fff; }
+
+.accordion .card .card-header {
+  padding: 0; }
+.accordion .card .card-header .d-block {
+  padding: .5rem 1rem;
+  color: #343a40; }
 
 /*!
  * Datepicker for Bootstrap v1.6.4 (https://github.com/eternicode/bootstrap-datepicker)
