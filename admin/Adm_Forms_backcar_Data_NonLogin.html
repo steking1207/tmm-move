@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="zh-Hant-TW">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+<meta charset="utf-8"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link rel="STYLESHEET" href="style/nav.css" type="text/css" />
+<link rel="STYLESHEET" href="http://code.jquery.com/ui/1.10.4/themes/trontastic/jquery-ui.css" />
+
+
+<title>崔媽媽優良搬家網 | 後台管理系統</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="" name="description"/>
+<meta content="" name="author"/>
+<!-- BEGIN GLOBAL MANDATORY STYLES -->
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css"/>
+<link href="assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+<link href="assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
+<link href="assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<link href="assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css"/>
+<link href="assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css"/>
+<!-- END GLOBAL MANDATORY STYLES -->
+<!-- BEGIN PAGE LEVEL STYLES -->
+<link rel="stylesheet" type="text/css" href="assets/global/plugins/select2/select2.css"/>
+<link rel="stylesheet" type="text/css" href="assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.css"/>
+<link rel="stylesheet" type="text/css" href="assets/global/plugins/jquery-nestable/jquery.nestable.css"/>
+<!-- END PAGE LEVEL STYLES -->
+<!-- BEGIN THEME STYLES -->
+<link href="assets/global/css/components.css" rel="stylesheet" type="text/css"/>
+<link href="assets/global/css/plugins.css" rel="stylesheet" type="text/css"/>
+<link href="assets/admin/layout/css/layout.css" rel="stylesheet" type="text/css"/>
+<link id="style_color" href="assets/admin/layout/css/themes/default.css" rel="stylesheet" type="text/css"/>
+<link href="assets/admin/layout/css/custom.css" rel="stylesheet" type="text/css"/>
+<!-- END THEME STYLES -->
+<link rel="shortcut icon" href="favicon.ico"/>
+
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+    <script   type="text/javascript" language="JavaScript">
+        //const town_arrary_no =;
+        //const town_array_name =;
+
+        const town_arrary_no =[['A1','A2','A3','A4','A5','A6','A7'],['B1','B2','B3','B4','B5','B6','B7','B8','B9','B10','B11','B12'],['C1','C2','C3','C4','C5','C6','C7','C8','C9','C10','C11','C12','C13','C14','C15','C16','C17','C18','C19','C20','C21','C22','C23','C24','C25','C26','C27','C28','C29'],['D1','D2','D3','D4','D5','D6','D7','D8','D9','D10','D11','D12','D13'],['E1','E2','E3'],['F1','F2','F3','F4','F5','F6','F7','F8','F9','F10','F11','F12','F13','F14'],['G1','G2','G3','G4','G5','G6','G7','G8','G9','G10','G11','G12','G13','G14','G15','G16','G17','G18'],['H1','H2','H3','H4','H5','H6','H7','H8','H9','H10','H11','H12','H13','H14','H15','H16','H17','H18','H19','H20','H21','H22','H23','H24','H25','H26','H27','H28','H29'],['I1','I2','I3','I4','I5','I6','I7','I8','I9','I10','I11','I12','I13','I14','I15','I16','I17','I18','I19','I20','I21','I22','I23','I24','I25','I26'],['J1','J2','J3','J4','J5','J6','J7','J8','J9','J10','J11','J12','J13'],['K1','K2','K3','K4','K5','K6','K7','K8','K9','K10','K11','K12','K13','K14','K15','K16','K17','K18','K19','K20'],['L1','L2'],['M1','M2','M3','M4','M5','M6','M7','M8','M9','M10','M11','M12','M13','M14','M15','M16','M17','M18'],['N1','N2','N3','N4','N5','N6','N7','N8','N9','N10','N11','N12','N13','N14','N15','N16','N17','N18','N19','N20','N21','N22','N23','N24','N25','N26','N27','N28','N29','N30','N31','N32','N33','N34','N35','N36','N37','N38','N39'],['O1','O2','O3','O4','O5','O6','O7','O8','O9','O10','O11','O12','O13','O14','O15','O16','O17','O18','O19','O20','O21','O22','O23','O24','O25','O26','O27','O28','O29','O30','O31','O32','O33','O34','O35','O36','O37','O38'],['P1','P2','P3','P4','P5','P6','P7','P8','P9','P10','P11','P12','P13','P14','P15','P16','P17','P18','P19','P20','P21','P22','P23','P24','P25','P26','P27','P28','P29','P30','P31','P32','P33'],['Q1','Q2','Q3','Q4','Q5','Q6','Q7','Q8','Q9','Q10','Q11','Q12'],['R1','R2','R3','R4','R5','R6','R7','R8','R9','R10','R11','R12','R13'],['S1','S2','S3','S4','S5','S6','S7','S8','S9','S10','S11','S12','S13','S14','S15','S16'],['T1','T2','T3','T4','T5','T6'],['U1','U2','U3','U4','U5','U6'],['V1','V2','V3','V4']];
+        const town_array_name =[['七堵區','中山區','中正區','仁愛區','安樂區','信義區','暖暖區'],['士林區','大同區','大安區','中山區','中正區','內湖區','文山區','北投區','松山區','信義區','南港區','萬華區'],['八里區','三芝區','三重區','三峽區','土城區','中和區','五股區','平溪區','永和區','石門區','石碇區','汐止區','坪林區','林口區','板橋區','金山區','泰山區','烏來區','貢寮區','淡水區','深坑區','新店區','新莊區','瑞芳區','萬里區','樹林區','雙溪區','蘆洲區','鶯歌區'],['八德區','大園區','大溪區','中壢區','平鎮區','桃園區','復興區','新屋區','楊梅區','龍潭區','龜山區','蘆竹區','觀音區'],['東區','北區','香山區'],['五峰鄉','北埔鄉','尖石鄉','竹北市','竹東鎮','芎林鄉','峨眉鄉','湖口鄉','新埔鎮','新豐鄉','橫山鄉','關西鎮','寶山鄉','八德市'],['三義鄉','三灣鄉','大湖鄉','公館鄉','竹南鎮','西湖鄉','卓蘭鎮','南庄鄉','後龍鎮','苗栗市','苑裡鎮','泰安鄉','通霄鎮','造橋鄉','獅潭鄉','銅鑼鄉','頭份鎮','頭屋鄉'],['中區 ','北屯區','北區 ','西屯區','西區 ','東區 ','南屯區','南區 ','大甲區','大安區','大肚區','大里區','大雅區','太平區','外埔區','石岡區','后里區','沙鹿區','和平區','東勢區','烏日區','神岡區','梧棲區','清水區','新社區','潭子區','龍井區','豐原區','霧峰區'],['二水鄉','二林鎮','大村鄉','大城鄉','北斗鎮','永靖鄉','田中鎮','田尾鄉','竹塘鄉','伸港鄉','秀水鄉','和美鎮','社頭鄉','芳苑鄉','花壇鄉','芬園鄉','員林鎮','埔心鄉','埔鹽鄉','埤頭鄉','鹿港鎮','溪州鄉','溪湖鎮','彰化市','福興鄉','線西鄉'],['中寮鄉','仁愛鄉','水里鄉','名間鄉','竹山鎮','信義鄉','南投市','埔里鎮','草屯鎮','國姓鄉','魚池鄉','鹿谷鄉','集集鎮'],['二崙鄉','口湖鄉','土庫鎮','大埤鄉','元長鄉','斗六市','斗南鎮','水林鄉','北港鎮','古坑鄉','四湖鄉','西螺鎮','東勢鄉','林內鄉','虎尾鎮','崙背鄉','麥寮鄉','莿桐鄉','臺西鄉','褒忠鄉'],['東區','西區'],['大林鎮','大埔鄉','中埔鄉','六腳鄉','太保市','水上鄉','布袋鎮','民雄鄉','朴子市','竹崎鄉','東石鄉','阿里山','梅山鄉','鹿草鄉','番路鄉','新港鄉','溪口鄉','義竹鄉'],['中區 ','北區 ','安平區','安南區','西區 ','東區 ','南區 ','中西區','七股區','下營區','大內區','山上區','仁德區','六甲區','北門區','左鎮區','永康區','玉井區','白河區','安定區','西港區','佳里區','官田區','東山區','南化區','後壁區','柳營區','將軍區','麻豆區','善化區','新化區','新市區','新營區','楠西區','學甲區','龍崎區','歸仁區','關廟區','鹽水區'],['三民區','小港區','左營區','前金區','前鎮區','苓雅區','新興區','楠梓區','鼓山區','旗津區','鹽埕區','三民區','大社區','大寮區','大樹區','仁武區','內門區','六龜區','永安區','田寮區','甲仙區','杉林區','岡山區','林園區','阿蓮區','美濃區','茄萣區','茂林區','桃源區','梓官區','鳥松區','湖內區','路竹區','旗山區','鳳山區','橋頭區','燕巢區','彌陀區'],['九如鄉','三地門鄉','內埔鄉','竹田鄉','牡丹鄉','車城鄉','里港鄉','佳冬鄉','來義鄉','枋山鄉','枋寮鄉','東港鎮','林邊鄉','長治鄉','南州鄉','屏東市','恆春鎮','春日鄉','崁頂鄉','泰武鄉','琉球鄉','高樹鄉','新埤鄉','新園鄉','獅子鄉','萬丹鄉','萬巒鄉','滿州鄉','瑪家鄉','潮州鎮','霧臺鄉','麟洛鄉','鹽埔鄉'],['三星鄉','大同鄉','五結鄉','冬山鄉','壯圍鄉','宜蘭市','南澳鄉','員山鄉','頭城鎮','礁溪鄉','羅東鎮','蘇澳鎮'],['玉里鎮','光復鄉','吉安鄉','秀林鄉','卓溪鄉','花蓮市','富里鄉','新城鄉','瑞穗鄉','萬榮鄉','壽豐鄉','鳳林鎮','豐濱鄉'],['大武鄉','太麻里','成功鎮','池上鄉','卑南鄉','延平鄉','東河鄉','金峰鄉','長濱鄉','海端鄉','鹿野鄉','達仁鄉','綠島鄉','臺東市','關山鎮','蘭嶼鄉'],['七美鄉','白沙鄉','西嶼鄉','馬公市','望安鄉','湖西鄉'],['金沙鎮','金城鎮','金湖鎮','金寧鄉','烈嶼鄉','烏坵鄉'],['北竿鄉','東引鄉','南竿鄉','莒光鄉']];
+
+        function Get_town(town_name,city_name) {
+            var o = null;
+            var sel_index = 0;
+
+            var ddl_town = document.getElementById(town_name);
+            var ddl_city = document.getElementById(city_name);
+
+            Remove(town_name);
+            sel_index = ddl_city.selectedIndex.toString();
+
+            for (let i = 0; i < town_arrary_no[sel_index].length-1; i++) {
+                o = document.createElement('option');
+                o.text = town_array_name[sel_index][i];
+                o.value = town_arrary_no[sel_index][i];
+                ddl_town.options.add(o);
+            }
+        }
+
+        function Remove(town_name)
+        {
+            var DropDownList=document.getElementById(town_name);
+
+            for(i=DropDownList.length-1; i>=0; i--) 
+            {DropDownList.remove(i);}
+        }
+
+        function Div_Control(Div_name) {
+            //先把所有的Div隱
+            document.getElementById("Div_Car").style.display = "none";
+            document.getElementById("Div_Personal").style.display = "none";
+
+            //再show想要出現的div
+            document.getElementById(Div_name).style.display = "";
+        }
+
+        $(function () {
+          $("#move_date").datepicker(
+              {
+                  showOn: "button",
+                  buttonImage: "Images/calendar.gif",
+                  dateFormat: "yy-mm-dd",
+                  buttonImageOnly: true
+              }
+          );
+        });
+
+        $(function () {
+          $("#move_date2").datepicker(
+              {
+                  showOn: "button",
+                  buttonImage: "Images/calendar.gif",
+                  dateFormat: "yy-mm-dd",
+                  buttonImageOnly: true
+              }
+          );
+        });
+
+        function resetDate() {
+            var _today = $('#move_date').val();
+            var firstDate = new Date();
+            var dayOfMonth = firstDate.getDate();
+            firstDate.setDate(dayOfMonth + 3);
+            var firstyear = (firstDate.getYear() >= 1900 ? firstDate.getYear() : firstDate.getYear() + 1900 );
+
+            var firstmonth = (1 + firstDate.getMonth()) < 10 ? '0' + (1 + firstDate.getMonth()) : (1 + firstDate.getMonth());
+            var firstday = firstDate.getDate() < 10 ? '0' + firstDate.getDate() : firstDate.getDate();
+            var _firstday = firstyear + '-' + firstmonth + '-' + firstday;
+
+            var lastDate = new Date();
+            var dayOfMonth = lastDate.getDate();
+            lastDate.setDate(dayOfMonth + 29);
+            //var lastyear  	= 1900 + lastDate.getYear();
+            var lastyear = (lastDate.getYear() >= 1900 ? lastDate.getYear() : lastDate.getYear() + 1900 );
+            var lastmonth = (1 + lastDate.getMonth()) < 10 ? '0' + (1 + lastDate.getMonth()) : (1 + lastDate.getMonth());
+            var lastday = lastDate.getDate() < 10 ? '0' + lastDate.getDate() : lastDate.getDate();
+            var _lastday = lastyear + '-' + lastmonth + '-' + lastday;
+
+            if (_today < _firstday || _today > _lastday) {
+                $('#move_date').val('');
+                alert('搬家日期請介於' + _firstday + ' ~ ' + _lastday + ' 之間!');
+            }
+        }
+
+        function resetDate2() {
+            var _today = $('#move_date2').val();
+            var firstDate = new Date();
+            var dayOfMonth = firstDate.getDate();
+            firstDate.setDate(dayOfMonth + 3);
+            var firstyear = (firstDate.getYear() >= 1900 ? firstDate.getYear() : firstDate.getYear() + 1900 );
+
+            var firstmonth = (1 + firstDate.getMonth()) < 10 ? '0' + (1 + firstDate.getMonth()) : (1 + firstDate.getMonth());
+            var firstday = firstDate.getDate() < 10 ? '0' + firstDate.getDate() : firstDate.getDate();
+            var _firstday = firstyear + '-' + firstmonth + '-' + firstday;
+
+            var lastDate = new Date();
+            var dayOfMonth = lastDate.getDate();
+            lastDate.setDate(dayOfMonth + 29);
+            //var lastyear  	= 1900 + lastDate.getYear();
+            var lastyear = (lastDate.getYear() >= 1900 ? lastDate.getYear() : lastDate.getYear() + 1900 );
+            var lastmonth = (1 + lastDate.getMonth()) < 10 ? '0' + (1 + lastDate.getMonth()) : (1 + lastDate.getMonth());
+            var lastday = lastDate.getDate() < 10 ? '0' + lastDate.getDate() : lastDate.getDate();
+            var _lastday = lastyear + '-' + lastmonth + '-' + lastday;
+
+            if (_today < _firstday || _today > _lastday) {
+                $('#move_date2').val('');
+                alert('搬家日期請介於' + _firstday + ' ~ ' + _lastday + ' 之間!');
+            }
+        }
+</script>
+
+
+
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<body class="page-header-fixed page-quick-sidebar-over-content">
+<form method="post" action="./Adm_Forms_backcar_Data_NonLogin?furt_id_list=1%2c&amp;furt_Amout_list=2%2c&amp;furt_Memo_list=%2c&amp;Cus_Name=&amp;CusQuality=&amp;CusLength=&amp;CusWidth=&amp;CusHeight=" id="form1" enctype="multipart/form-data">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="89FFAB18" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="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" />
+</div>
+<!-- BEGIN HEADER -->
+<div class="page-header navbar navbar-fixed-top">
+	<!-- BEGIN HEADER INNER -->
+	<div class="page-header-inner">
+		<!-- BEGIN LOGO -->
+		<div class="page-logo">
+			<a href="index.html">
+			<img src="assets/admin/layout/img/logo-invert.png" alt="logo" class="logo-default"/>
+			</a>
+			<div class="menu-toggler sidebar-toggler hide">
+				<!-- DOC: Remove the above "hide" to enable the sidebar toggler button on header -->
+			</div>
+		</div>
+		<!-- END LOGO -->
+		<!-- BEGIN RESPONSIVE MENU TOGGLER -->
+		<a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+		</a>
+		<!-- END RESPONSIVE MENU TOGGLER -->
+        <!-- BEGIN HORIZANTAL MENU -->
+		<div class="hor-menu hor-menu-light hidden-sm hidden-xs">
+			<ul class="nav navbar-nav">
+				<li>
+                	<a href="about.html">佈告欄</a>
+				</li>
+			</ul>
+		</div>
+		<!-- END HORIZANTAL MENU -->
+		<!-- BEGIN TOP NAVIGATION MENU -->
+		<div class="top-menu">
+			<ul class="nav navbar-nav pull-right">
+                <!-- BEGIN USER LOGIN DROPDOWN -->
+				<li class="dropdown dropdown-user">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+					<img alt="" class="img-circle" src="assets/admin/layout/img/avatar3_small.jpg"/>
+					<span class="username">
+                    <span id="lab_Member_name"></span>
+					</span>
+					<i class="fa fa-angle-down"></i>
+					</a>
+					<ul class="dropdown-menu">
+                        <li>
+							<a href="#">
+                                <i class="icon-key"></i> 變更密碼
+                            </a>
+						</li>
+						<li>
+							<a href="adm_logout.aspx">
+							<i class="icon-logout"></i> 登出 </a>
+						</li>
+					</ul>
+				</li>
+				<!-- END USER LOGIN DROPDOWN -->
+
+			</ul>
+		</div>
+		<!-- END TOP NAVIGATION MENU -->
+	</div>
+	<!-- END HEADER INNER -->
+</div>
+<!-- END HEADER -->
+<div class="clearfix">
+</div>
+
+<!-- BEGIN CONTAINER -->
+<div class="page-container">
+    <!-- BEGIN SIDEBAR -->
+	<div class="page-sidebar-wrapper">
+		<div class="page-sidebar navbar-collapse collapse">
+			<!-- BEGIN SIDEBAR MENU -->
+			<ul class="page-sidebar-menu" data-auto-scroll="true" data-slide-speed="200">
+				<!-- DOC: To remove the sidebar toggler from the sidebar you just need to completely remove the below "sidebar-toggler-wrapper" LI element -->
+
+
+                                <li class="p-2">
+                    <div class="note note-warning">
+                        <h4 class="block h4">系統公告區</h4>
+                        <p>
+                            重要公告2019.11.28<br>
+                            1、優網的線上估價單，各位填寫的回覆訊息是不會傳給消費者的。 請務必電話聯絡消費者。
+                        </p>
+                    </div>
+				</li>
+				<li class="start">
+					<a href="index.html">
+					<i class="icon-home"></i>
+					<span class="title">佈告欄</span>
+					</a>
+				</li>
+				<li class="start">
+					<a href="Adm_main.aspx">
+					<i class="icon-home"></i>
+					<span class="title">待辦清單</span>
+					</a>
+				</li>
+<li class=""><a href="javascript:;"><i class="icon-briefcase"></i><span class="title">估價單表單管理</span><span class="arrow open"></span></a><ul class="sub-menu">
+<li><a href="evaluate_step1.aspx">估價單(填單)</a></li>
+<li><a href="Form_Query.aspx">估價單表單查詢</a></li>
+</ul></li>
+<li class=""><a href="javascript:;"><i class="icon-briefcase"></i><span class="title">回頭車表單管理</span><span class="arrow open"></span></a><ul class="sub-menu">
+<li><a href="Adm_Forms_BackCar_New_NonLogin.aspx">回頭車(填單)</a></li>
+<li><a href="Form_Query_BackCar.aspx">回頭車表單查詢</a></li>
+<li><a href="Forms_BackCar_Schd_New.aspx">回頭車車班維護</a></li>
+</ul></li>
+<li class=""><a href="javascript:;"><i class="icon-briefcase"></i><span class="title">會員資料管理</span><span class="arrow open"></span></a><ul class="sub-menu">
+<li><a href="Form_Select_Member.aspx">會員資料維護</a></li>
+</ul></li>
+<li class=""><a href="javascript:;"><i class="icon-settings"></i><span class="title">表單參數管理</span><span class="arrow open"></span></a><ul class="sub-menu">
+<li><a href="#">搬家地形代碼維護</a></li>
+<li><a href="#">特殊地形代碼維護</a></li>
+<li><a href="#">身份類別代碼維護</a></li>
+<li><a href="#">搬家扣折扣券維護</a></li>
+</ul></li>
+<li class=""><a href="javascript:;"><i class="icon-settings"></i><span class="title">功能管理</span><span class="arrow open"></span></a><ul class="sub-menu">
+<li><a href="Func_Calendar.aspx">崔媽媽行事曆</a></li>
+<li><a href="#">電子郵件維護</a></li>
+<li><a href="#">遵守辦法維護</a></li>
+<li><a href="#">會議記錄維護</a></li>
+<li><a href="#">推播通知維護</a></li>
+<li><a href="#">搬家評鑑維護</a></li>
+<li><a href="#">角色管理</a></li>
+<li><a href="#">帳號管理</a></li>
+<li><a href="#">公司管理</a></li>
+</ul></li>
+<li class=""><a href="javascript:;"><i class="icon-folder"></i><span class="title">首頁管理</span><span class="arrow open"></span></a><ul class="sub-menu">
+<li><a href="#">首頁橫式圖檔管理</a></li>
+<li><a href="#">首頁彈跳視窗圖檔管理</a></li>
+<li><a href="Adm_Video_Type.aspx">影音類別維護</a></li>
+<li><a href="Adm_Video_List.aspx">影音資料維護</a></li>
+<li><a href="Adm_News_Type.aspx">搬家事類別維護</a></li>
+<li><a href="Adm_News_List.aspx">搬家事資料維護</a></li>
+<li><a href="Adm_FAQ_Type.aspx">Q&A類別維護</a></li>
+<li><a href="Adm_FAQ_List.aspx">Q&A資料維護</a></li>
+<li><a href="Adm_Law_Type.aspx">搬家法規類別維護</a></li>
+<li><a href="Adm_Law_List.aspx">搬家法規資料維護</a></li>
+<li><a href="Adm_Knowledge_List.aspx">搬家知識資料維護</a></li>
+<li><a href="Adm_Slide_PIC.aspx">輪播圖片管理</a></li>
+<li><a href="#">活動相簿管理</a></li>
+</ul></li>
+<li class=""><a href="javascript:;"><i class="icon-doc"></i><span class="title">樣板維護</span><span class="arrow open"></span></a><ul class="sub-menu">
+<li><a href="#">線上估價單(消費者詢價)</a></li>
+<li><a href="#">線上估價單(業者報價)</a></li>
+<li><a href="#">線上估價單(提醒搬家日)</a></li>
+<li><a href="#">回頭車(消費者詢價)</a></li>
+<li><a href="#">回頭車(業者報價)</a></li>
+<li><a href="#">回頭車(提醒搬家日)</a></li>
+</ul></li>
+<li class=""><a href="javascript:;"><i class="icon-briefcase"></i><span class="title">企業專區維護</span><span class="arrow open"></span></a><ul class="sub-menu">
+<li><a href="Adm_Company_Intro.aspx?content_area=M1">公司介紹</a></li>
+<li><a href="Adm_Company_Cars.aspx">車型介紹</a></li>
+<li><a href="Adm_Company_Intro.aspx?content_area=M2">企業人物</a></li>
+<li><a href="Adm_Company_Intro.aspx?content_area=M4">價格結構</a></li>
+<li><a href="Adm_Company_Cus.aspx">自訂</a></li>
+</ul></li>
+
+
+			</ul>
+			<!-- END SIDEBAR MENU -->
+		</div>
+	</div>
+	<!-- END SIDEBAR -->
+
+
+
+	<!-- BEGIN CONTENT -->
+	<div class="page-content-wrapper">
+		<div class="page-content">
+
+			<!-- BEGIN PAGE HEADER-->
+			<div class="row">
+				<div class="col-md-12">
+					<!-- BEGIN PAGE TITLE & BREADCRUMB-->
+					<h3 class="page-title">
+					填寫回頭車表單(非會員)
+					</h3>
+					<ul class="page-breadcrumb breadcrumb">
+						<li>
+							<i class="fa fa-home"></i>
+							<a href="Adm_Main.aspx">首頁</a>
+							<i class="fa fa-angle-right"></i>
+						</li>
+                        <li>
+							<a href="#">填寫回頭車表單(非會員)</a>
+						</li>
+					</ul>
+					<!-- END PAGE TITLE & BREADCRUMB-->
+				</div>
+			</div>
+			<!-- END PAGE HEADER-->
+
+			<!-- BEGIN PAGE CONTENT-->
+
+
+
+
+
+
+			<div class="row">
+				<div class="col-md-12">
+					<div class="portlet box grey-cascade">
+						<div class="portlet-title">
+							<div class="caption">
+								填寫回頭車表單(非會員)
+							</div>
+						</div>
+                        <div class="portlet-body">
+
+                            <div id="Div_Car" title="預估車數">
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-6 col-md-offset-3 text-center">
+                                        <p>
+                                            先生/女士:
+                                            <br />
+                                            感謝您使用崔媽媽基金會，填寫回頭車表單(非會員)表單預估車數。<br>
+                                            此預估車數，為大約參考值，實際搬遷車數，<br>
+                                            仍會依現場物品堆疊之實況為準，在此說明之。
+                                            (特殊物品不含括在此預估車數內)
+                                        </p>
+                                        <div style="margin: 10px 0;">
+                                        <img src="Images/car1.png">
+                                        </div>
+                                        <div class="lead m-0">
+                                            <span id="lab_eval_cars">1</span> X 車數
+                                        </div>
+                                        <input class="form-control" name="txt_eval_cars" type="text" value="1" readonly="readonly" id="txt_eval_cars" style="display:none" />
+                                    </div>
+                                </div>
+            
+                                <div class="text-center">
+                                    <hr>
+                                    <input class="btn btn-warning" type="submit" name="btn_sel_furt" value="上一步_重新選擇傢俱" id="btn_sel_furt" />
+                                    <input class="btn btn-warning" type="button" ID="Step32" value="下一步_填寫個人資料"  OnClick="Div_Control('Div_Personal')" >
+                                </div>
+                            </div>
+
+                            <div id="Div_Personal" title="填寫個人資料" style="display: none;">
+                                <div class="h3">登錄內容</div>
+                                <p>
+                                    公告:崔媽媽提醒您，為確保您的權利，若您已選定搬家公司為您服務，請確認搬家契約書上的公司名稱是您所選定的搬家公司!
+                                    <br/>*建議您至少在搬運日一星期前聯絡搬家公司，以利於優先選擇您理想中的搬家時間。
+                                </p>
+
+                <table id="Table_Personal_Data" class="table table-bordered table-striped">
+                    <tr class="hi_line">
+                        <td>
+                            姓名
+                        </td><td><input class="form-control" name="txt_Member_Name" type="text" id="txt_Member_Name" /><span id="Label1"></span></td><td>
+                            手機
+                        </td><td><input class="form-control" name="txt_Member_Mobile" type="text" id="txt_Member_Mobile" /><span id="lab_Member_Mobile"></span></td><td>
+                            EMail
+                        </td><td><input class="form-control" name="txt_Member_Email" type="text" id="txt_Member_Email" /><span id="lab_Member_Email"></span></td>
+                    </tr><tr class="record2">
+                        <td>
+                            帳號
+                        </td><td><input class="form-control" name="txt_user_account" type="text" id="txt_user_account" /></td><td>
+                            設定密碼
+                        </td><td><input class="form-control" name="txt_passwd" type="text" id="txt_passwd" /></td><td>
+                            預計喬遷日期(起)～(訖)
+                        </td><td>
+                    <div class="form-inline">
+                    <input class="form-control" name="move_date" type="text" readonly="readonly" id="move_date" onchange="resetDate()" />
+                        ～
+                        <input class="form-control" name="move_date2" type="text" readonly="readonly" id="move_date2" onchange="resetDate2()" />
+                    </div>
+                    </td>
+                    </tr><tr class="hi_line">
+                        <td>
+                            遷出地址
+                        </td><td><select class="form-control" name="ddl_City_Out" id="ddl_City_Out" placeholder="縣市" onchange="Get_town(&#39;ddl_Town_Out&#39;,&#39;ddl_City_Out&#39;);">
+                            <option value="A">基隆市</option>
+                            <option value="B">台北市</option>
+                            <option value="C">新北市</option>
+                            <option value="D">桃園市</option>
+                            <option value="E">新竹市</option>
+                            <option value="F">新竹縣</option>
+                            <option value="G">苗栗縣</option>
+                            <option value="H">台中市</option>
+                            <option value="I">彰化縣</option>
+                            <option value="J">南投縣</option>
+                            <option value="K">雲林縣</option>
+                            <option value="L">嘉義市</option>
+                            <option value="M">嘉義縣</option>
+                            <option value="N">台南市</option>
+                            <option value="O">高雄市</option>
+                            <option value="P">屏東縣</option>
+                            <option value="Q">宜蘭縣</option>
+                            <option value="R">花蓮縣</option>
+                            <option value="S">台東縣</option>
+                            <option value="T">澎湖縣</option>
+                            <option value="U">金門縣</option>
+                            <option value="V">連江縣</option>
+
+                        </select></td><td><select class="form-control" name="ddl_Town_Out" id="ddl_Town_Out" placeholder="鄉鎮市區">
+                            <option value="A1">七堵區</option>
+                            <option value="A2">中山區</option>
+                            <option value="A3">中正區</option>
+                            <option value="A4">仁愛區</option>
+                            <option value="A5">安樂區</option>
+                            <option value="A6">信義區</option>
+                            <option value="A7">暖暖區</option>
+
+                        </select></td><td colspan="3"><input class="form-control" name="Move_Address_Out" type="text" id="Move_Address_Out" placeholder="輸入路(街)" /></td>
+                    </tr><tr class="record2">
+                        <td>
+                            遷出地形
+                        </td><td><select class="form-control" name="ddl_Terrain_Out" id="ddl_Terrain_Out">
+                            <option value="1">公寓</option>
+                            <option value="2">電梯大樓</option>
+
+                        </select></td><td>
+                            步行距離(公尺)
+                        </td><td><input class="form-control" name="txt_distance_out" type="text" id="txt_distance_out" placeholder="(公尺)" /><select class="form-control" name="ddl_Distance_Out" id="ddl_Distance_Out">
+                            <option value="1">10公尺</option>
+                            <option value="2">20公尺</option>
+                            <option value="3">30公尺</option>
+                            <option value="4">40公尺</option>
+                            <option value="5">50公尺</option>
+                            <option value="6">50公尺以上</option>
+
+                        </select></td><td>
+                            特殊地形備註
+                        </td><td><input class="form-control" name="txtMemo_Out" type="text" id="txtMemo_Out" /></td>
+                    </tr><tr class="hi_line">
+                        <td>
+                            遷入地址<br />
+
+                        </td><td><select class="form-control" name="ddl_City_In" id="ddl_City_In" placeholder="縣市" onchange="Get_town(&#39;ddl_Town_In&#39;,&#39;ddl_City_In&#39;);">
+                            <option value="A">基隆市</option>
+                            <option value="B">台北市</option>
+                            <option value="C">新北市</option>
+                            <option value="D">桃園市</option>
+                            <option value="E">新竹市</option>
+                            <option value="F">新竹縣</option>
+                            <option value="G">苗栗縣</option>
+                            <option value="H">台中市</option>
+                            <option value="I">彰化縣</option>
+                            <option value="J">南投縣</option>
+                            <option value="K">雲林縣</option>
+                            <option value="L">嘉義市</option>
+                            <option value="M">嘉義縣</option>
+                            <option value="N">台南市</option>
+                            <option value="O">高雄市</option>
+                            <option value="P">屏東縣</option>
+                            <option value="Q">宜蘭縣</option>
+                            <option value="R">花蓮縣</option>
+                            <option value="S">台東縣</option>
+                            <option value="T">澎湖縣</option>
+                            <option value="U">金門縣</option>
+                            <option value="V">連江縣</option>
+
+                        </select></td><td><select class="form-control" name="ddl_Town_In" id="ddl_Town_In" placeholder="鄉鎮市區">
+                            <option value="A1">七堵區</option>
+                            <option value="A2">中山區</option>
+                            <option value="A3">中正區</option>
+                            <option value="A4">仁愛區</option>
+                            <option value="A5">安樂區</option>
+                            <option value="A6">信義區</option>
+                            <option value="A7">暖暖區</option>
+
+                        </select></td><td colspan="3"><input class="form-control" name="Move_Address_In" type="text" id="Move_Address_In" placeholder="輸入路(街)" /></td>
+                    </tr><tr class="record2">
+                        <td>
+                            遷入地形
+                        </td><td><select class="form-control" name="ddl_Terrain_In" id="ddl_Terrain_In">
+                            <option value="1">公寓</option>
+                            <option value="2">電梯大樓</option>
+
+                        </select></td><td>
+                            步行距離(公尺)
+                        </td><td><input class="form-control" name="txt_distance_in" type="text" id="txt_distance_in" placeholder="(公尺)" /><select class="form-control" name="ddl_distance_In" id="ddl_distance_In">
+                            <option value="1">10公尺</option>
+                            <option value="2">20公尺</option>
+                            <option value="3">30公尺</option>
+                            <option value="4">40公尺</option>
+                            <option value="5">50公尺</option>
+                            <option value="6">50公尺以上</option>
+
+                        </select></td><td>
+                            特殊地形備註
+                        </td><td><input class="form-control" name="txtMemo_In" type="text" id="txtMemo_In" /></td>
+                    </tr><tr class="hi_line">
+                        <td>
+                            身份類別<br />
+                        </td><td colspan="2"><select class="form-control" name="ddl_cus_kind" id="ddl_cus_kind" placeholder="身份類別">
+                            <option value="1">一般戶</option>
+                            <option value="2">社會住宅</option>
+                            <option value="3">本人持有低收入戶證(中低收請選擇一般戶)</option>
+
+                        </select></td><td>
+                            持有搬家折扣券
+                        </td><td colspan="2"><input class="form-control" name="txt_coupon_no" type="text" id="txt_coupon_no" placeholder="折扣券號碼" /><input id="chk_other_quote1" type="checkbox" name="chk_other_quote1" /><label for="chk_other_quote1">搬家紙箱報價</label><input id="chk_other_quote2" type="checkbox" name="chk_other_quote2" /><label for="chk_other_quote2">租借物流箱報價</label><input id="chk_other_quote3" type="checkbox" name="chk_other_quote3" /><label for="chk_other_quote3">液晶電視盒租借報價</label><input id="chk_other_quote4" type="checkbox" name="chk_other_quote4" /><label for="chk_other_quote4">掛衣箱租借報價</label></td>
+                    </tr>
+                </table>
+                                <br />
+                                <input type="file" multiple="multiple" name="FileUpload1" id="FileUpload1" accept="image/*" />
+                                <br />
+                                <div class="text-center">
+                                    <hr>
+                                    <input class="btn btn-warning" type="submit" name="Button1" value="下一步_送案(S)" id="Button1" />
+                                </div>
+                            </div>
+
+
+                        </div>
+					</div>
+				</div>
+
+
+
+
+			</div>
+
+			<!-- END PAGE CONTENT-->
+		</div>
+	</div>
+	<!-- END CONTENT -->
+
+</div>
+<!-- END CONTAINER -->
+
+<!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+<!-- BEGIN CORE PLUGINS -->
+<!--[if lt IE 9]>
+<script src="assets/global/plugins/respond.min.js"></script>
+<script src="assets/global/plugins/excanvas.min.js"></script>
+<![endif]-->
+<script src="assets/global/plugins/jquery-1.11.0.min.js" type="text/javascript"></script>
+<script src="assets/global/plugins/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+<!-- IMPORTANT! Load jquery-ui-1.10.3.custom.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+<script src="assets/global/plugins/jquery-ui/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+<script src="assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
+<script src="assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+<script src="assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+<script src="assets/global/plugins/jquery.cokie.min.js" type="text/javascript"></script>
+<script src="assets/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
+<script src="assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+<!-- END CORE PLUGINS -->
+<!-- BEGIN PAGE LEVEL PLUGINS -->
+<script type="text/javascript" src="assets/global/plugins/select2/select2.min.js"></script>
+<script type="text/javascript" src="assets/global/plugins/datatables/media/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.js"></script>
+<script src="assets/global/plugins/jquery-nestable/jquery.nestable.js"></script>
+<!-- END PAGE LEVEL PLUGINS -->
+<!-- BEGIN PAGE LEVEL SCRIPTS -->
+<script src="assets/global/scripts/metronic.js" type="text/javascript"></script>
+<script src="assets/admin/layout/scripts/layout.js" type="text/javascript"></script>
+<script src="assets/admin/layout/scripts/quick-sidebar.js" type="text/javascript"></script>
+<script src="assets/admin/pages/scripts/table-managed.js"></script>
+<script src="assets/admin/pages/scripts/ui-nestable.js"></script>
+<script>
+    jQuery(document).ready(function() {
+        Metronic.init(); // init metronic core components
+        Layout.init(); // init current layout
+        QuickSidebar.init() // init quick sidebar
+        TableManaged.init();
+        UINestable.init();
+    });
+</script>
+</form>
+</body>
+<!-- END BODY -->
+</html>

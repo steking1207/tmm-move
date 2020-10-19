@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="zh-Hant-TW">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+<meta charset="utf-8"/>
+<title>崔媽媽優良搬家網 | 後台管理系統</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="" name="description"/>
+<meta content="" name="author"/>
+<!-- BEGIN GLOBAL MANDATORY STYLES -->
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css"/>
+<link href="assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+<link href="assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
+<link href="assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<link href="assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css"/>
+<link href="assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css"/>
+<!-- END GLOBAL MANDATORY STYLES -->
+<!-- BEGIN PAGE LEVEL STYLES -->
+<link rel="stylesheet" type="text/css" href="assets/global/plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.css"/>
+<link rel="stylesheet" type="text/css" href="assets/global/plugins/bootstrap-markdown/css/bootstrap-markdown.min.css">
+<link rel="stylesheet" type="text/css" href="assets/global/plugins/bootstrap-summernote/summernote.css">
+<link rel="stylesheet" type="text/css" href="assets/global/plugins/clockface/css/clockface.css"/>
+<link rel="stylesheet" type="text/css" href="assets/global/plugins/bootstrap-datepicker/css/datepicker3.css"/>
+<link rel="stylesheet" type="text/css" href="assets/global/plugins/bootstrap-timepicker/css/bootstrap-timepicker.min.css"/>
+<link rel="stylesheet" type="text/css" href="assets/global/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css"/>
+<link rel="stylesheet" type="text/css" href="assets/global/plugins/bootstrap-datetimepicker/css/datetimepicker.css"/>
+<!-- END PAGE LEVEL STYLES -->
+<!-- BEGIN THEME STYLES -->
+<link href="assets/global/css/components.css" rel="stylesheet" type="text/css"/>
+<link href="assets/global/css/plugins.css" rel="stylesheet" type="text/css"/>
+<link href="assets/admin/layout/css/layout.css" rel="stylesheet" type="text/css"/>
+<link id="style_color" href="assets/admin/layout/css/themes/default.css" rel="stylesheet" type="text/css"/>
+<link href="assets/admin/layout/css/custom.css" rel="stylesheet" type="text/css"/>
+<!-- END THEME STYLES -->
+<link rel="shortcut icon" href="favicon.ico"/>
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<body class="page-header-fixed page-quick-sidebar-over-content">
+
+<!-- BEGIN HEADER -->
+<div class="page-header navbar navbar-fixed-top">
+	<!-- BEGIN HEADER INNER -->
+	<div class="page-header-inner">
+		<!-- BEGIN LOGO -->
+		<div class="page-logo">
+			<a href="index.html">
+			<img src="assets/admin/layout/img/logo-invert.png" alt="logo" class="logo-default"/>
+			</a>
+			<div class="menu-toggler sidebar-toggler hide">
+				<!-- DOC: Remove the above "hide" to enable the sidebar toggler button on header -->
+			</div>
+		</div>
+		<!-- END LOGO -->
+		<!-- BEGIN RESPONSIVE MENU TOGGLER -->
+		<a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+		</a>
+		<!-- END RESPONSIVE MENU TOGGLER -->
+        <!-- BEGIN HORIZANTAL MENU -->
+		<div class="hor-menu hor-menu-light hidden-sm hidden-xs">
+			<ul class="nav navbar-nav">
+				<li>
+                	<a href="about.html">佈告欄</a>
+				</li>
+			</ul>
+		</div>
+		<!-- END HORIZANTAL MENU -->
+		<!-- BEGIN TOP NAVIGATION MENU -->
+		<div class="top-menu">
+			<ul class="nav navbar-nav pull-right">
+                <!-- BEGIN USER LOGIN DROPDOWN -->
+				<li class="dropdown dropdown-user">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+					<img alt="" class="img-circle" src="assets/admin/layout/img/avatar3_small.jpg"/>
+					<span class="username">
+					張風三 </span>
+					<i class="fa fa-angle-down"></i>
+					</a>
+					<ul class="dropdown-menu">
+                        <li>
+							<a href="#">
+                                <i class="icon-key"></i> 變更密碼
+                            </a>
+						</li>
+						<li>
+							<a href="login.html">
+							<i class="icon-logout"></i> 登出 </a>
+						</li>
+					</ul>
+				</li>
+				<!-- END USER LOGIN DROPDOWN -->
+
+			</ul>
+		</div>
+		<!-- END TOP NAVIGATION MENU -->
+	</div>
+	<!-- END HEADER INNER -->
+</div>
+<!-- END HEADER -->
+<div class="clearfix">
+</div>
+<!-- BEGIN CONTAINER -->
+<div class="page-container">
+	<!-- BEGIN SIDEBAR -->
+	<div class="page-sidebar-wrapper">
+		<!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+		<!-- DOC: Change data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+		<div class="page-sidebar navbar-collapse collapse">
+			<!-- BEGIN SIDEBAR MENU -->
+			<ul class="page-sidebar-menu" data-auto-scroll="true" data-slide-speed="200">
+				<!-- DOC: To remove the sidebar toggler from the sidebar you just need to completely remove the below "sidebar-toggler-wrapper" LI element -->
+                <li class="p-2">
+                    <div class="note note-warning">
+                        <h4 class="block h4">系統公告區</h4>
+                        <p>
+                            重要公告2019.11.28<br>
+                            1、優網的線上估價單，各位填寫的回覆訊息是不會傳給消費者的。 請務必電話聯絡消費者。
+                        </p>
+                    </div>
+				</li>
+				<li class="start">
+					<a href="index.html">
+					<i class="icon-home"></i>
+					<span class="title">佈告欄</span>
+					</a>
+				</li>
+				<li class="active open">
+					<a href="javascript:;">
+					<i class="icon-settings"></i>
+					<span class="title">功能管理</span>
+					<span class="arrow"></span>
+					</a>
+					<ul class="sub-menu">
+						<li class="active">
+							<a href="#">選單管理</a>
+						</li>
+                        <li>
+							<a href="#">角色管理</a>
+						</li>
+                        <li>
+							<a href="#">帳號管理</a>
+						</li>
+                        <li>
+							<a href="#">公司管理</a>
+						</li>
+                        <li>
+							<a href="#">會議記錄維護</a>
+						</li>
+                        <li>
+							<a href="#">線上表單</a>
+						</li>
+                        <li>
+							<a href="#">樣板維護</a>
+						</li>
+                        <li>
+							<a href="#">師傅下線管理</a>
+						</li>
+                        <li>
+							<a href="#">記錄管理</a>
+						</li>
+                        <li>
+							<a href="#">公告管理</a>
+						</li>
+					</ul>
+				</li>
+				<li class="active open">
+					<a href="javascript:;">
+					<i class="icon-folder"></i>
+					<span class="title">首頁管理</span>
+					<span class="arrow open"></span>
+					</a>
+					<ul class="sub-menu">
+                        <li>
+							<a href="#">主選單維護</a>
+						</li>
+                        <li>
+							<a href="#">廣告維護</a>
+						</li>
+                        <li>
+							<a href="#">友情連結維護</a>
+						</li>
+                        <li>
+							<a href="#">關鍵字維護</a>
+						</li>
+					</ul>
+				</li>
+                <li class="active open">
+					<a href="javascript:;">
+					<i class="icon-doc"></i>
+					<span class="title">內容管理</span>
+					<span class="arrow open"></span>
+					</a>
+					<ul class="sub-menu">
+                        <li>
+							<a href="#">特別專區維護</a>
+						</li>
+                        <li>
+							<a href="#">影音快遞維護</a>
+						</li>
+                        <li>
+							<a href="#">最新活動維護</a>
+						</li>
+                        <li>
+							<a href="#">搬家百科維護</a>
+						</li>
+                        <li>
+							<a href="#">環保搬家維護</a>
+						</li>
+                        <li>
+							<a href="#">搬家評鑑維護</a>
+						</li>
+                        <li>
+							<a href="#">下載&amp;索取維護</a>
+						</li>
+                        <li>
+							<a href="#">弱勢扶助維護</a>
+						</li>
+                        <li>
+							<a href="#">照片管理</a>
+						</li>
+					</ul>
+				</li>
+                <li class="active open">
+					<a href="javascript:;">
+					<i class="icon-briefcase"></i>
+					<span class="title">企業專區維護</span>
+					<span class="arrow open"></span>
+					</a>
+					<ul class="sub-menu">
+                        <li>
+							<a href="#">企業內頁維護</a>
+						</li>
+                        <li>
+							<a href="#">師傅維護</a>
+						</li>
+                        <li>
+							<a href="#">回頭車班表維護</a>
+						</li>
+                        <li>
+							<a href="#">回頭車(新)</a>
+						</li>
+					</ul>
+				</li>
+                <li class="active open">
+					<a href="javascript:;">
+					<i class="icon-book-open"></i>
+					<span class="title">師傅認證維護</span>
+					<span class="arrow open"></span>
+					</a>
+					<ul class="sub-menu">
+                        <li>
+							<a href="#">認證內頁維護</a>
+						</li>
+                        <li>
+							<a href="#">課程維護</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<!-- END SIDEBAR MENU -->
+		</div>
+	</div>
+	<!-- END SIDEBAR -->
+	<!-- BEGIN CONTENT -->
+	<div class="page-content-wrapper">
+		<div class="page-content">
+			<!-- BEGIN PAGE HEADER-->
+			<div class="row">
+				<div class="col-md-12">
+					<!-- BEGIN PAGE TITLE & BREADCRUMB-->
+					<h3 class="page-title">
+					弱勢扶助維護
+					</h3>
+					<ul class="page-breadcrumb breadcrumb">
+						<li>
+							<i class="fa fa-home"></i>
+							<a href="index.html">首頁</a>
+							<i class="fa fa-angle-right"></i>
+						</li>
+						<li>
+							<a href="#">內容管理</a>
+                            <i class="fa fa-angle-right"></i>
+						</li>
+                        <li>
+							<a href="#">弱勢扶助維護</a>
+						</li>
+					</ul>
+					<!-- END PAGE TITLE & BREADCRUMB-->
+				</div>
+			</div>
+			<!-- END PAGE HEADER-->
+			<!-- BEGIN PAGE CONTENT-->
+			<div class="row">
+				<div class="col-md-12">
+					<!-- BEGIN EXTRAS PORTLET-->
+					<div class="portlet box grey-cascade">
+						<div class="portlet-title">
+							<div class="caption">
+								修改文章
+							</div>
+						</div>
+						<div class="portlet-body form">
+							<form class="form-horizontal form-bordered">
+								<div class="form-body">
+                                    <div class="form-group">
+										<label class="col-md-2 control-label">名稱</label>
+										<div class="col-md-10">
+											<input type="text" class="form-control" placeholder="">
+										</div>
+									</div>
+                                    <div class="form-group">
+										<label class="col-md-2 control-label">描述</label>
+										<div class="col-md-10">
+                                            <textarea class="form-control" rows="4">緣起2003年，崔媽媽推薦之搬家業者從服務經驗中發現許多家庭無力支付搬家費用，因此崔媽媽基金會與搬家業者共同推出---弱勢搬家扶助方案，分別以「搬運費用八折優惠」及「弱勢搬家費用補助」兩種方式，減輕經濟困難家庭的負荷。扶助精神本基金由崔媽媽推薦之搬家業者及每月大眾捐贈共同募集而成，基金現階段用途以協助經濟困難家庭減輕搬運負擔為主。扶助方式與申請辦法■注意：申請者需為本會推薦搬</textarea>
+										</div>
+									</div>
+                                    <div class="form-group">
+										<label class="control-label col-md-2">起始日期</label>
+										<div class="col-md-4">
+											<div class="input-group input-large date-picker input-daterange" data-date="2012/10/11" data-date-format="yyyy/mm/dd">
+												<input type="text" class="form-control" name="from">
+												<span class="input-group-addon">
+												到 </span>
+												<input type="text" class="form-control" name="to">
+											</div>
+											<!-- /input-group -->
+											<span class="help-block">
+											請選擇日期範圍 </span>
+										</div>
+									</div>
+                                    <div class="form-group">
+										<label class="col-md-2 control-label">是否啟用</label>
+										<div class="col-md-5">
+											<select class="form-control">
+												<option>是</option>
+												<option>否</option>
+											</select>
+										</div>
+									</div>
+                                    <div class="form-group">
+										<label class="col-md-2 control-label">檔案上傳</label>
+                                        <div class="col-md-5">
+                                            <input type="file" id="">
+                                            <span class="text-danger">
+                                                 只接受PNG檔案, 縮圖後尺寸為:300x300
+                                            </span>
+                                        </div>
+									</div>
+									<div class="form-group">
+										<div class="col-12">
+											<div name="summernote" id="summernote_1">
+											</div>
+										</div>
+									</div>
+								</div>
+                                <div class="form-actions">
+                                    <button type="submit" class="btn btn-primary">儲存</button>
+									<button type="button" class="btn btn-default">返回</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- END PAGE CONTENT-->
+		</div>
+	</div>
+	<!-- END CONTENT -->
+</div>
+<!-- END CONTAINER -->
+<!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+<!-- BEGIN CORE PLUGINS -->
+<!--[if lt IE 9]>
+<script src="assets/global/plugins/respond.min.js"></script>
+<script src="assets/global/plugins/excanvas.min.js"></script>
+<![endif]-->
+<script src="assets/global/plugins/jquery-1.11.0.min.js"></script>
+<script src="assets/global/plugins/jquery-migrate-1.2.1.min.js"></script>
+<!-- IMPORTANT! Load jquery-ui-1.10.3.custom.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+<script src="assets/global/plugins/jquery-ui/jquery-ui-1.10.3.custom.min.js"></script>
+<script src="assets/global/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
+<script src="assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<script src="assets/global/plugins/jquery.blockui.min.js"></script>
+<script src="assets/global/plugins/jquery.cokie.min.js"></script>
+<script src="assets/global/plugins/uniform/jquery.uniform.min.js"></script>
+<script src="assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+<!-- END CORE PLUGINS -->
+<!-- BEGIN PAGE LEVEL PLUGINS -->
+<script type="text/javascript" src="assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+<script type="text/javascript" src="assets/global/plugins/bootstrap-datepicker/js/locales/bootstrap-datepicker.zh-TW.js"></script>
+<script type="text/javascript" src="assets/global/plugins/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
+<script type="text/javascript" src="assets/global/plugins/clockface/js/clockface.js"></script>
+<script type="text/javascript" src="assets/global/plugins/bootstrap-daterangepicker/moment.min.js"></script>
+<script type="text/javascript" src="assets/global/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+<script type="text/javascript" src="assets/global/plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="assets/global/plugins/bootstrap-datetimepicker/js/bootstrap-datepicker.zh-TW.min.js"></script>
+<script src="assets/global/plugins/bootstrap-wysihtml5/wysihtml5-0.3.0.js"></script>
+<script src="assets/global/plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.js"></script>
+<script src="assets/global/plugins/bootstrap-markdown/lib/markdown.js"></script>
+<script src="assets/global/plugins/bootstrap-markdown/js/bootstrap-markdown.js"></script>
+<script src="assets/global/plugins/bootstrap-summernote/summernote.min.js"></script>
+<!-- END PAGE LEVEL PLUGINS -->
+<!-- BEGIN PAGE LEVEL SCRIPTS -->
+<script src="assets/global/scripts/metronic.js"></script>
+<script src="assets/admin/layout/scripts/layout.js"></script>
+<script src="assets/admin/layout/scripts/quick-sidebar.js"></script>
+<script src="assets/admin/pages/scripts/components-editors.js"></script>
+<script src="assets/admin/pages/scripts/components-pickers.js"></script>
+<!-- END PAGE LEVEL SCRIPTS -->
+<script>
+jQuery(document).ready(function() {
+   // initiate layout and plugins
+    Metronic.init(); // init metronic core components
+    Layout.init(); // init current layout
+    QuickSidebar.init() // init quick sidebar
+    ComponentsEditors.init();
+    ComponentsPickers.init();
+});
+</script>
+<!-- END JAVASCRIPTS -->
+</body>
+<!-- END BODY -->
+</html>

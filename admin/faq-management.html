@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="zh-Hant-TW">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+<meta charset="utf-8"/>
+<title>崔媽媽優良搬家網 | 後台管理系統</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="" name="description"/>
+<meta content="" name="author"/>
+<!-- BEGIN GLOBAL MANDATORY STYLES -->
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css"/>
+<link href="assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+<link href="assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
+<link href="assets/global/plugins/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+<link href="assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css"/>
+<link href="assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css"/>
+<!-- END GLOBAL MANDATORY STYLES -->
+<!-- BEGIN PAGE LEVEL STYLES -->
+<link rel="stylesheet" type="text/css" href="assets/global/plugins/select2/select2.css"/>
+<link rel="stylesheet" type="text/css" href="assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.css"/>
+<link rel="stylesheet" type="text/css" href="assets/global/plugins/jquery-nestable/jquery.nestable.css"/>
+<!-- END PAGE LEVEL STYLES -->
+<!-- BEGIN THEME STYLES -->
+<link href="assets/global/css/components.css" rel="stylesheet" type="text/css"/>
+<link href="assets/global/css/plugins.css" rel="stylesheet" type="text/css"/>
+<link href="assets/admin/layout/css/layout.css" rel="stylesheet" type="text/css"/>
+<link id="style_color" href="assets/admin/layout/css/themes/default.css" rel="stylesheet" type="text/css"/>
+<link href="assets/admin/layout/css/custom.css" rel="stylesheet" type="text/css"/>
+
+<!-- END THEME STYLES -->
+<link rel="shortcut icon" href="favicon.ico"/>
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<link rel="STYLESHEET" href="http://code.jquery.com/ui/1.10.4/themes/trontastic/jquery-ui.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+<script src="content/ckeditor/ckeditor.js" type="text/javascript"></script>
+<script>
+    //改成中文版
+    CKEDITOR.replace('txt_news_content', { language: 'zh-CN' });
+</script>
+
+
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<body class="page-header-fixed page-quick-sidebar-over-content">
+<form method="post" action="./Adm_FAQ_List" id="form1" enctype="multipart/form-data">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="7F1916B8" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="1B5ESXayXjDNiX26FoW+dmY8Fv+pu0Lg6h0SZgz57yEI8pdOH+ABcX5FVqX5O+eXiNNwR9upyu7nbTl+YsQFSE7Nb84OebLp3g2O9gYE6iENlRqvVkBx4+uwu4KIhGxqUADH8Gh9tyxKzUvCMvscTOuw3UgPORrelYUVlLcNbNAjlWJMPCtgUjue8QKrvFHoG8Zv9bUCxmL/5O2P7rLeeF7mP50i7rBnHJVhuLhjRfjVnfFTzeOl8BLkFc5+ykXOC90C7S7c67gv43MXX5anlgVZHB+vm5qgaJwJfNhCE0WJUfLefbuTqj/a6DdQRMIlx/PerKLiD2knHivtvTuCQbKpQtY15l46i0Vz4awdYykuKQlMEKZhAvnNxYVpy6FuzqBYteIwvuucNZCXSuQuCmp5lshynrYr9o+8ekSrmN2z8Ca5+HTZL6/7KaXME2JqlBrq6mYqmHGcAjs7sed489M8Q28bF4knmYyzqzJLMZcYfCoTFtgolw2IykAtDEcRGG5uRv4vgwJ+k898TSSJYwkWJQxRXVAvUS8JB8YSkWvi54evXMODKefSUSpsKmE5ldFWhh9xB6v0Bvt4n7jnQR8oqDaCj7WwdkjbmY3WQ4F8a4UXQBh9CalHgof1Lmzy" />
+</div>
+<!-- BEGIN HEADER -->
+<div class="page-header navbar navbar-fixed-top">
+	<!-- BEGIN HEADER INNER -->
+	<div class="page-header-inner">
+		<!-- BEGIN LOGO -->
+		<div class="page-logo">
+			<a href="index.html">
+			<img src="assets/admin/layout/img/logo-invert.png" alt="logo" class="logo-default"/>
+			</a>
+			<div class="menu-toggler sidebar-toggler hide">
+				<!-- DOC: Remove the above "hide" to enable the sidebar toggler button on header -->
+			</div>
+		</div>
+		<!-- END LOGO -->
+		<!-- BEGIN RESPONSIVE MENU TOGGLER -->
+		<a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+		</a>
+		<!-- END RESPONSIVE MENU TOGGLER -->
+        <!-- BEGIN HORIZANTAL MENU -->
+		<div class="hor-menu hor-menu-light hidden-sm hidden-xs">
+			<ul class="nav navbar-nav">
+				<li>
+                	<a href="about.html">佈告欄</a>
+				</li>
+			</ul>
+		</div>
+		<!-- END HORIZANTAL MENU -->
+		<!-- BEGIN TOP NAVIGATION MENU -->
+		<div class="top-menu">
+			<ul class="nav navbar-nav pull-right">
+                <!-- BEGIN USER LOGIN DROPDOWN -->
+				<li class="dropdown dropdown-user">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+					<img alt="" class="img-circle" src="assets/admin/layout/img/avatar3_small.jpg"/>
+					<span class="username">
+                    <span id="lab_Member_name">sk2</span>
+					</span>
+					<i class="fa fa-angle-down"></i>
+					</a>
+					<ul class="dropdown-menu">
+                        <li>
+							<a href="#">
+                                <i class="icon-key"></i> 變更密碼
+                            </a>
+						</li>
+						<li>
+							<a href="adm_logout.aspx">
+							<i class="icon-logout"></i> 登出 </a>
+						</li>
+					</ul>
+				</li>
+				<!-- END USER LOGIN DROPDOWN -->
+
+			</ul>
+		</div>
+		<!-- END TOP NAVIGATION MENU -->
+	</div>
+	<!-- END HEADER INNER -->
+</div>
+<!-- END HEADER -->
+<div class="clearfix">
+</div>
+
+<!-- BEGIN CONTAINER -->
+<div class="page-container">
+    <!-- BEGIN SIDEBAR -->
+	<div class="page-sidebar-wrapper">
+		<div class="page-sidebar navbar-collapse collapse">
+			<!-- BEGIN SIDEBAR MENU -->
+			<ul class="page-sidebar-menu" data-auto-scroll="true" data-slide-speed="200">
+				<!-- DOC: To remove the sidebar toggler from the sidebar you just need to completely remove the below "sidebar-toggler-wrapper" LI element -->
+                                <li class="p-2">
+                    <div class="note note-warning">
+                        <h4 class="block h4">系統公告區</h4>
+                        <p>
+                            重要公告2019.11.28<br>
+                            1、優網的線上估價單，各位填寫的回覆訊息是不會傳給消費者的。 請務必電話聯絡消費者。
+                        </p>
+                    </div>
+				</li>
+				<li class="start">
+					<a href="index.html">
+					<i class="icon-home"></i>
+					<span class="title">佈告欄</span>
+					</a>
+				</li>
+				<li class="start">
+					<a href="Adm_main.aspx">
+					<i class="icon-home"></i>
+					<span class="title">待辦清單</span>
+					</a>
+				</li>
+<li class=""><a href="javascript:;"><i class="icon-briefcase"></i><span class="title">估價單表單管理</span><span class="arrow open"></span></a><ul class="sub-menu">
+<li><a href="evaluate_step1.aspx">估價單(填單)</a></li>
+<li><a href="Form_Query.aspx">估價單表單查詢</a></li>
+</ul></li>
+<li class=""><a href="javascript:;"><i class="icon-briefcase"></i><span class="title">回頭車表單管理</span><span class="arrow open"></span></a><ul class="sub-menu">
+<li><a href="Adm_Forms_BackCar_New_NonLogin.aspx">回頭車(填單)</a></li>
+<li><a href="Form_Query_BackCar.aspx">回頭車表單查詢</a></li>
+<li><a href="Forms_BackCar_Schd_New.aspx">回頭車車班維護</a></li>
+</ul></li>
+<li class=""><a href="javascript:;"><i class="icon-briefcase"></i><span class="title">會員資料管理</span><span class="arrow open"></span></a><ul class="sub-menu">
+<li><a href="Form_Select_Member.aspx">會員資料維護</a></li>
+</ul></li>
+<li class=""><a href="javascript:;"><i class="icon-settings"></i><span class="title">表單參數管理</span><span class="arrow open"></span></a><ul class="sub-menu">
+<li><a href="#">搬家地形代碼維護</a></li>
+<li><a href="#">特殊地形代碼維護</a></li>
+<li><a href="#">身份類別代碼維護</a></li>
+<li><a href="#">搬家扣折扣券維護</a></li>
+</ul></li>
+<li class=""><a href="javascript:;"><i class="icon-settings"></i><span class="title">功能管理</span><span class="arrow open"></span></a><ul class="sub-menu">
+<li><a href="Func_Calendar.aspx">崔媽媽行事曆</a></li>
+<li><a href="#">電子郵件維護</a></li>
+<li><a href="#">遵守辦法維護</a></li>
+<li><a href="#">會議記錄維護</a></li>
+<li><a href="#">推播通知維護</a></li>
+<li><a href="#">搬家評鑑維護</a></li>
+<li><a href="#">角色管理</a></li>
+<li><a href="#">帳號管理</a></li>
+<li><a href="#">公司管理</a></li>
+</ul></li>
+<li class=""><a href="javascript:;"><i class="icon-folder"></i><span class="title">首頁管理</span><span class="arrow open"></span></a><ul class="sub-menu">
+<li><a href="#">首頁橫式圖檔管理</a></li>
+<li><a href="#">首頁彈跳視窗圖檔管理</a></li>
+<li><a href="Adm_Video_Type.aspx">影音類別維護</a></li>
+<li><a href="Adm_Video_List.aspx">影音資料維護</a></li>
+<li><a href="Adm_News_Type.aspx">搬家事類別維護</a></li>
+<li><a href="Adm_News_List.aspx">搬家事資料維護</a></li>
+<li><a href="Adm_FAQ_Type.aspx">Q&A類別維護</a></li>
+<li><a href="Adm_FAQ_List.aspx">Q&A資料維護</a></li>
+<li><a href="Adm_Law_Type.aspx">搬家法規類別維護</a></li>
+<li><a href="Adm_Law_List.aspx">搬家法規資料維護</a></li>
+<li><a href="Adm_Knowledge_List.aspx">搬家知識資料維護</a></li>
+<li><a href="Adm_Slide_PIC.aspx">輪播圖片管理</a></li>
+<li><a href="#">活動相簿管理</a></li>
+</ul></li>
+<li class=""><a href="javascript:;"><i class="icon-doc"></i><span class="title">樣板維護</span><span class="arrow open"></span></a><ul class="sub-menu">
+<li><a href="#">線上估價單(消費者詢價)</a></li>
+<li><a href="#">線上估價單(業者報價)</a></li>
+<li><a href="#">線上估價單(提醒搬家日)</a></li>
+<li><a href="#">回頭車(消費者詢價)</a></li>
+<li><a href="#">回頭車(業者報價)</a></li>
+<li><a href="#">回頭車(提醒搬家日)</a></li>
+</ul></li>
+<li class=""><a href="javascript:;"><i class="icon-briefcase"></i><span class="title">企業專區維護</span><span class="arrow open"></span></a><ul class="sub-menu">
+<li><a href="Adm_Company_Intro.aspx?content_area=M1">公司介紹</a></li>
+<li><a href="Adm_Company_Cars.aspx">車型介紹</a></li>
+<li><a href="Adm_Company_Intro.aspx?content_area=M2">企業人物</a></li>
+<li><a href="Adm_Company_Intro.aspx?content_area=M4">價格結構</a></li>
+<li><a href="Adm_Company_Cus.aspx">自訂</a></li>
+</ul></li>
+
+			</ul>
+			<!-- END SIDEBAR MENU -->
+		</div>
+	</div>
+	<!-- END SIDEBAR -->
+
+	<!-- BEGIN CONTENT -->
+	<div class="page-content-wrapper">
+		<div class="page-content">
+
+			<!-- BEGIN PAGE HEADER-->
+			<div class="row">
+				<div class="col-md-12">
+					<!-- BEGIN PAGE TITLE & BREADCRUMB-->
+					<h3 class="page-title">
+					FAQ資料維護
+					</h3>
+					<ul class="page-breadcrumb breadcrumb">
+						<li>
+							<i class="fa fa-home"></i>
+							<a href="Adm_Main.aspx">首頁</a>
+							<i class="fa fa-angle-right"></i>
+						</li>
+                        <li>
+							<a href="Adm_FAQ_List.aspx">FAQ資料維護</a>
+						</li>
+					</ul>
+					<!-- END PAGE TITLE & BREADCRUMB-->
+				</div>
+			</div>
+			<!-- END PAGE HEADER-->
+
+			<!-- BEGIN PAGE CONTENT-->
+			<div class="row">
+				<div class="col-md-6">
+					<div class="portlet box grey-cascade">
+						<div class="portlet-title">
+							<div class="caption">
+								新增FAQ
+							</div>
+						</div>
+					</div>
+
+                    <div id="div_video_type_edit" class="portlet-body">
+                            
+                            <table class="table table-defs table-striped table-bordered table-hover table-condensed" id="Table_Video_list">
+                                <tr class="hi_line">
+                                    <td>FAQ類別</td>
+									<td>FAQ名稱</td>
+                                    <td>FAQ說明</td>
+                                    </tr>
+
+                                <tr class="info">
+                                    <td><select name="ddl_news_type_edit" id="ddl_news_type_edit" class="form-control">
+	<option value="A">估價篇</option>
+	<option value="B">契約篇</option>
+	<option value="C">打包整理篇</option>
+	<option value="D">搬運過程篇</option>
+	<option value="E">崔媽媽問卷篇</option>
+	<option value="F">其他</option>
+
+</select></td>
+                                    <td><input class="form-control" name="txt_news_name" type="text" id="txt_news_name" /></td>
+                                    <td><input class="form-control" name="txt_news_alt" type="text" id="txt_news_alt" /></td>
+
+                                    <input type="hidden" name="hf_news_rowid" id="hf_news_rowid" />
+								</tr>
+
+                                <tr class="hi_line">
+                                    <td>FAQ縮圖</td>
+									<td>排序別</td>
+									<td>是否顯示</td>
+								</tr>
+
+                                <tr class="warning">
+                                    <td>
+                                        <input type="hidden" name="txt_news_img" id="txt_news_img" />
+                                        <img id="i_news_img" style="height:50px;width:50px;" />
+                                        <input type="file" name="fu_news_img" id="fu_news_img" accept="image/*" />
+                                    </td>
+                                    <td><input class="form-control" name="txt_sort_id" type="text" id="txt_sort_id" /></td>
+                                    <td>
+                                        <div class="checkbox-list">
+                                        <input id="chk_disp_flag" type="checkbox" name="chk_disp_flag" />
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr class="hi_line">
+                                    <td colspan="3">FAQ內文</td>
+								</tr>
+
+                                <tr class="info">
+                                    <td colspan="3">
+                                        <select class="form-control" name="ddl_open_type" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ddl_open_type\&#39;,\&#39;\&#39;)&#39;, 0)" id="ddl_open_type">
+	<option selected="selected" value="V">Youtube影片</option>
+	<option value="T">文字</option>
+	<option value="O">其他</option>
+
+</select><br />
+
+                                        <div id="Div_OT_V">
+                                        FAQ網址：<br />
+                                        <input class="form-control" name="txt_news_url" type="text" id="txt_news_url" />
+                                        </div>
+
+                                        
+                                    </td>
+                                </tr>
+
+
+
+								</table>
+                            <table class="table table-defs table-striped table-bordered table-hover table-condensed" id="Table_btn_list">
+                                <tr class="hi_line">
+                                    <td colspan="2">
+                                        <input class="btn blue" type="submit" name="btn_AddNew" value="新增" id="btn_AddNew" />
+                                        
+                                        
+                                        
+                                    </td>
+                                </tr>
+
+                            </table>
+
+
+                            
+						</div>
+				</div>
+
+                <div class="col-md-6">
+
+                        <div class="portlet-title">
+							<div class="caption">
+								FAQ清單
+							</div>
+						</div>
+                    <div class="table-responsive">
+                    <table class="table table-defs table-striped table-bordered table-hover table-condensed" id="Table_Video_Type">
+                                <tr class="warning">
+                                    <td>
+                                        <select class="form-control" name="ddl_news_type" id="ddl_news_type">
+	<option selected="selected" value="A">估價篇</option>
+	<option value="B">契約篇</option>
+	<option value="C">打包整理篇</option>
+	<option value="D">搬運過程篇</option>
+	<option value="E">崔媽媽問卷篇</option>
+	<option value="F">其他</option>
+
+</select>
+                                        <input class="btn blue" type="submit" name="btn_query_type" value="查詢" id="btn_query_type" />
+                                    </td>
+                                </tr>
+                         </table>
+                        </div>
+                    <div>
+	<table cellspacing="0" rules="all" class="table-responsive table table-striped" border="1" id="gv_type_list">
+		<tr>
+			<th scope="col">修改</th><th scope="col">FAQ名稱</th><th scope="col">FAQ說明</th><th scope="col">FAQ縮圖</th><th scope="col">排序</th><th scope="col">是否顯示</th><th scope="col">建立時間</th><th scope="col">建立人員</th><th scope="col">修改時間</th><th scope="col">修改人員</th>
+		</tr><tr>
+			<td><a href="adm_FAQ_list.aspx?faq_rowid=1&amp;action=edit">修改</a></td><td>如何選擇你所需要的搬家公司(物品包裝類)</td><td>																					其實搬家的計費方式，不像一般的貨物載運(計費方式:車型大小、公里數之內、超過另計)，由於各家的架構、成本的考量、搬運方式不盡相同，(是否有包裝)，傢俱是否拆裝?貴重傢俱是否要額外保險?這些都是與計費方式有關係。																											現階段消費者對搬家服務的層面，要求層次更高，國內一些搬家業者也力求清新的形象，品質的提昇，也應</td><td><img src="http://120.124.72.214:8080/assets/img/uploads/news-sm-01.jpg" style="height:50px;width:50px;" /></td><td>1</td><td>Y</td><td>2020/7/20 上午 10:56:29</td><td>系統管理員</td><td>2012/5/16 下午 04:17:36</td><td>&nbsp;</td>
+		</tr><tr>
+			<td><a href="adm_FAQ_list.aspx?faq_rowid=2&amp;action=edit">修改</a></td><td>崔媽媽推薦的業者與一般坊間業者有何不同?</td><td>	崔媽媽推薦的業者最起碼品質都在一定的水準之上，而且有基金會為消費者做事後的品質服務處理，一般搬家公司很少有後端的這個服務，遇到搬家糾紛也未必能以一個客觀的立場去調解，這是崔媽媽推薦的搬家公司與一般搬家公司最大的差別。</td><td><img src="http://120.124.72.214:8080/assets/img/uploads/news-sm-01.jpg" style="height:50px;width:50px;" /></td><td>2</td><td>Y</td><td>2020/7/20 上午 10:56:29</td><td>系統管理員</td><td>2012/5/16 下午 04:17:42</td><td>&nbsp;</td>
+		</tr><tr>
+			<td><a href="adm_FAQ_list.aspx?faq_rowid=3&amp;action=edit">修改</a></td><td>找崔媽媽的業者會不會被敲竹槓、耍流氓?</td><td>	基本上您可以放心，崔媽媽推薦業者都有一定品質與水準，且每個月我們都會追蹤搬家公司的服務品質，只要您事前估價都有跟搬家公司說明清楚一定不會發生。</td><td><img src="http://120.124.72.214:8080/assets/img/uploads/news-sm-01.jpg" style="height:50px;width:50px;" /></td><td>3</td><td>Y</td><td>2020/7/20 上午 10:56:29</td><td>系統管理員</td><td>2012/5/16 下午 04:17:43</td><td>&nbsp;</td>
+		</tr><tr>
+			<td><a href="adm_FAQ_list.aspx?faq_rowid=4&amp;action=edit">修改</a></td><td>精緻型搬家、經濟型搬家、自助搬家有何不同?</td><td>	精緻型：大型傢俱搬家公司會先做包裝防護，才搬運上車。	經濟型：打包整理消費者都要自行處理好，傢俱僅搬上車後才做基本防護。	自助型：消費者要將物品先搬到舊家1樓，搬家公司只負責運送服務，到達新居搬家公司會將物品也同樣放在1樓，由消費者再自行搬運上去。	其它相關資訊可參閱，專業分項：http://61.218.51.164/tmmweb/f51.asp?ServItem=1</td><td><img src="http://120.124.72.214:8080/assets/img/uploads/news-sm-01.jpg" style="height:50px;width:50px;" /></td><td>4</td><td>Y</td><td>2020/7/20 上午 10:56:29</td><td>系統管理員</td><td>2012/5/16 下午 04:17:44</td><td>&nbsp;</td>
+		</tr><tr>
+			<td><a href="adm_FAQ_list.aspx?faq_rowid=5&amp;action=edit">修改</a></td><td>到府估價要付費嗎？</td><td>	不用！每一家公司都有提供免費到府估價服務。	但有限定區域，一般以業者所在區域的同一縣市為主，跨縣市則不在免費提供範圍，詳情請見崔媽媽基金會網站之每月更新的「優良搬家公司價格結構」。網址：http://61.218.51.164/tmmweb/f43.asp</td><td><img src="http://120.124.72.214:8080/assets/img/uploads/news-sm-01.jpg" style="height:50px;width:50px;" /></td><td>5</td><td>Y</td><td>2020/7/20 上午 10:56:29</td><td>系統管理員</td><td>2012/5/16 下午 04:17:45</td><td>&nbsp;</td>
+		</tr><tr>
+			<td><a href="adm_FAQ_list.aspx?faq_rowid=6&amp;action=edit">修改</a></td><td>事前準備做的好，開心搬家沒煩腦!!</td><td>搬家是人生的大事之一，如何讓搬家順利進行?該找哪間搬家公司?費用怎麼算?&amp;hellip;等等。
+
+您是否還在為搬家大小事煩腦呢?讓崔媽媽告訴您：
+
+
+	找好新家並確認好搬家日期
+	在崔媽媽網站上搜尋適合自己的搬家公司
+	初步電話諮詢
+	約定估價人員到府估價
+	詢問搬家價格包含哪些服務?加價情況有哪些?
+	協助估價人員清點所需搬運的所有物品
+	估價完畢，價格談妥後即簽訂合約
+	合約內容務必看清楚，查</td><td><img src="http://120.124.72.214:8080/assets/img/uploads/news-sm-01.jpg" style="height:50px;width:50px;" /></td><td>6</td><td>Y</td><td>2020/7/20 上午 10:56:29</td><td>系統管理員</td><td>2018/6/5 上午 11:37:49</td><td>&nbsp;</td>
+		</tr><tr>
+			<td><a href="adm_FAQ_list.aspx?faq_rowid=7&amp;action=edit">修改</a></td><td>搬家APP下載專區</td><td>&nbsp;</td><td><img src="http://120.124.72.214:8080/assets/img/uploads/news-sm-01.jpg" style="height:50px;width:50px;" /></td><td>7</td><td>Y</td><td>2020/7/20 上午 10:56:29</td><td>系統管理員</td><td>2018/10/25 下午 12:09:05</td><td>&nbsp;</td>
+		</tr>
+	</table>
+</div>
+
+                </div>
+
+			</div>
+
+
+			<!-- END PAGE CONTENT-->
+		</div>
+	</div>
+	<!-- END CONTENT -->
+
+</div>
+<!-- END CONTAINER -->
+
+<!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+<!-- BEGIN CORE PLUGINS -->
+<!--[if lt IE 9]>
+<script src="assets/global/plugins/respond.min.js"></script>
+<script src="assets/global/plugins/excanvas.min.js"></script>
+<![endif]-->
+<script src="assets/global/plugins/jquery-1.11.0.min.js" type="text/javascript"></script>
+<script src="assets/global/plugins/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+<!-- IMPORTANT! Load jquery-ui-1.10.3.custom.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+<script src="assets/global/plugins/jquery-ui/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+<script src="assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
+<script src="assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+<script src="assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+<script src="assets/global/plugins/jquery.cokie.min.js" type="text/javascript"></script>
+<script src="assets/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
+<script src="assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+<!-- END CORE PLUGINS -->
+<!-- BEGIN PAGE LEVEL PLUGINS -->
+<script type="text/javascript" src="assets/global/plugins/select2/select2.min.js"></script>
+<script type="text/javascript" src="assets/global/plugins/datatables/media/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.js"></script>
+<script src="assets/global/plugins/jquery-nestable/jquery.nestable.js"></script>
+<!-- END PAGE LEVEL PLUGINS -->
+<!-- BEGIN PAGE LEVEL SCRIPTS -->
+<script src="assets/global/scripts/metronic.js" type="text/javascript"></script>
+<script src="assets/admin/layout/scripts/layout.js" type="text/javascript"></script>
+<script src="assets/admin/layout/scripts/quick-sidebar.js" type="text/javascript"></script>
+<script src="assets/admin/pages/scripts/table-managed.js"></script>
+<script src="assets/admin/pages/scripts/ui-nestable.js"></script>
+<script>
+    jQuery(document).ready(function() {
+        Metronic.init(); // init metronic core components
+        Layout.init(); // init current layout
+        QuickSidebar.init() // init quick sidebar
+        TableManaged.init();
+        UINestable.init();
+    });
+</script>
+</form>
+</body>
+<!-- END BODY -->
+</html>
