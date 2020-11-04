@@ -179,6 +179,61 @@
                                     <div class="mb-4">
                                         <div class="h5 text-primary-dark font-weight-bold">遷出資訊</div>
                                     </div>
+
+                                    <div class="form-group row mb-4">
+                                        <label for="inputInAddress" class="col-sm-2 col-form-label">地址</label>
+                                        <div class="col-sm-10">
+                                            <div id="UpdatePanel2">
+                                            <div class="form-row">
+
+                                                <div class="col">
+                                                    <select name="ddl_City_In" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ddl_City_In\&#39;,\&#39;\&#39;)&#39;, 0)" id="ddl_City_In" class="custom-select mb-2 mb-lg-0" placeholder="縣市">
+		<option selected="selected" value="A">基隆市</option>
+		<option value="B">台北市</option>
+		<option value="C">新北市</option>
+		<option value="D">桃園市</option>
+		<option value="E">新竹市</option>
+		<option value="F">新竹縣</option>
+		<option value="G">苗栗縣</option>
+		<option value="H">台中市</option>
+		<option value="I">彰化縣</option>
+		<option value="J">南投縣</option>
+		<option value="K">雲林縣</option>
+		<option value="L">嘉義市</option>
+		<option value="M">嘉義縣</option>
+		<option value="N">台南市</option>
+		<option value="O">高雄市</option>
+		<option value="P">屏東縣</option>
+		<option value="Q">宜蘭縣</option>
+		<option value="R">花蓮縣</option>
+		<option value="S">台東縣</option>
+		<option value="T">澎湖縣</option>
+		<option value="U">金門縣</option>
+		<option value="V">連江縣</option>
+
+	</select>
+                                                </div>
+                                                <div class="col">
+                                                    <select name="ddl_Town_In" id="ddl_Town_In" class="custom-select mb-2 mb-lg-0" placeholder="鄉鎮市區">
+		<option value="A1">七堵區</option>
+		<option value="A2">中山區</option>
+		<option value="A3">中正區</option>
+		<option value="A4">仁愛區</option>
+		<option value="A5">安樂區</option>
+		<option value="A6">信義區</option>
+		<option value="A7">暖暖區</option>
+
+	</select>
+                                                </div>
+
+                                                <div class="col-12 col-lg-6 mb-2 mb-lg-0">
+                                                    <input name="txt_address_In" type="text" id="txt_address_In" placeholder="輸入路(街)" class="form-control" required="" />
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+<!--
                                     <div class="form-group row mb-4">
                                         <label for="inputOutAddress" class="col-sm-2 col-form-label">地址</label>
                                         <div class="col-sm-10">
@@ -199,6 +254,7 @@
                                             </div>
                                         </div>
                                     </div>
+-->
                                     <div class="form-group row mb-4">
                                         <label for="inputOutTerrain" class="col-sm-2 col-form-label">遷出地形</label>
                                         <div class="col-sm-4">
