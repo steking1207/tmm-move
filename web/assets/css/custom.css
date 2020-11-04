@@ -278,9 +278,14 @@ select {
   width: 100%;
   height: 100px;
   object-fit: cover;
-  border: 1px solid #dee2e6; }
+  border: 1px solid #dee2e6;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
 .form-upload-img img:hover, .form-upload-img img:focus {
-  cursor: pointer; }
+  cursor: pointer;
+  opacity: .7; }
 .form-upload-img .btn-upload {
   display: flex;
   align-items: center;
