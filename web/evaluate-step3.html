@@ -343,9 +343,7 @@
                                                             <i class="fas fa-times text-dark"></i>
                                                         </a>
                                                     </div>
-                                                    <a class="d-block w-100 fresco" href="assets/img/uploads/company-img-01.jpg" data-fresco-group="company-image">
-                                                        <img class="img-fluid" src="assets/img/uploads/news-lg-01.jpg" alt="">
-                                                    </a>
+                                                    <img class="img-fluid" src="assets/img/uploads/news-lg-01.jpg" alt="">
                                                 </div>
                                                 <div class="col-4 col-lg-2 mb-2 text-center">
                                                     <div class="pos-r-t mr-1">
@@ -353,9 +351,7 @@
                                                             <i class="fas fa-times text-dark"></i>
                                                         </a>
                                                     </div>
-                                                    <a class="d-block w-100 fresco" href="assets/img/uploads/company-img-02.jpg" data-fresco-group="company-image">
-                                                        <img class="img-fluid" src="assets/img/uploads/news-lg-02.jpg" alt="">
-                                                    </a>
+                                                    <img class="img-fluid" src="assets/img/uploads/news-lg-02.jpg" alt="">
                                                 </div>
                                                 <div class="col-4 col-lg-2 mb-2 text-center">
                                                     <div class="pos-r-t mr-1">
@@ -391,7 +387,7 @@
                                                 </div>
                                                 <div class="col-4 col-lg-2 mb-2 text-center">
                                                     <label class="btn btn-upload btn-outline-secondary">
-                                                        <i class="fas fa-2x fa-plus"></i> <input type="file" hidden>
+                                                        <i class="fas fa-2x fa-plus"></i> <input type="file" multiple="multiple" name="FileUpload1" id="FileUpload1" accept="image/*" onchange="showpreview(this);" hidden />
                                                     </label>
                                                 </div>
                                             </div>
@@ -516,6 +512,19 @@
         </div>
     </div>
 
+    <div class="modal fade" id="viewImg" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <div id="imgViewer"></div>
+                    <a class="btn btn-light mt-5" href="#" data-dismiss="modal">
+                        關閉
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- global -->
     <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
     <script src="assets/js/vendor/bootstrap-touchspin.min.js"></script>
@@ -541,6 +550,15 @@
             format: 'yyyy/mm/dd',
             language: 'zh-TW',
         });
+
+        $('.form-upload-img img').on('click', function(e) {
+            $('#imgViewer').html('').append( $(e.currentTarget).clone() )
+            $('#viewImg').modal('show')
+        });
+        $('.form-upload-img img').each(function(i,e) {
+            $(e).wrap('<div class="img-wrapper"></div>')
+        });
+
     </script>
 
     <!-- module include -->

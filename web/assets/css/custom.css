@@ -279,6 +279,8 @@ select {
   height: 100px;
   object-fit: cover;
   border: 1px solid #dee2e6; }
+.form-upload-img img:hover, .form-upload-img img:focus {
+  cursor: pointer; }
 .form-upload-img .btn-upload {
   display: flex;
   align-items: center;
@@ -361,6 +363,9 @@ select {
 #section-video {
   border: 3px solid #f5ba23;
   background: url(../img/ui//bg-index-video.png) center no-repeat #fef7ed; }
+
+#viewImg .modal-content {
+  background: none; }
 
 .table th, .table td {
   vertical-align: middle !important; }
