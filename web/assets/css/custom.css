@@ -688,21 +688,21 @@ i.h1, i.h2, i.h3, i.h4, i.h5, i.h6 {
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 10; }
+  z-index: 5; }
 
 .pos-a-c {
   position: absolute;
   top: 50%;
   right: 0;
   left: 0;
-  z-index: 10;
+  z-index: 5;
   transform: translateY(-50%); }
 
 .pos-a-r {
   position: absolute;
   top: 50%;
   right: 0;
-  z-index: 10;
+  z-index: 5;
   transform: translateY(-50%); }
 
 .modal-dialog {
