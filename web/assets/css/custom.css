@@ -3425,3 +3425,31 @@ Lots taken from Flatly (MIT): https://bootswatch.com/4/flatly/bootstrap.css
 
 .fr-window-skin-fresco.fr-no-svg.fr-thumbnails-vertical .fr-thumbnails-side-next .fr-thumbnails-side-button-disabled .fr-thumbnails-side-button-icon, .fr-window-skin-fresco.fr-no-svg.fr-thumbnails-vertical .fr-thumbnails-side-next:hover .fr-thumbnails-side-button-disabled .fr-thumbnails-side-button-icon {
   background-position: -377px -91px; }
+
+a.fresco {
+  position: relative; }
+a.fresco img {
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+a.fresco:hover, a.fresco:focus {
+  background: #000; }
+a.fresco:hover img, a.fresco:focus img {
+  opacity: .7; }
+a.fresco:hover:before, a.fresco:focus:before {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  margin-top: -1rem;
+  display: block;
+  width: 100%;
+  height: 100%;
+  content: '\f00e';
+  font-family: "Font Awesome\ 5 Free";
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1;
+  text-align: center;
+  color: #fff; }
