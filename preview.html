@@ -5,7 +5,7 @@
 <base target="_blank" />
 <title></title>
 <style type="text/css">
-body {margin:50px 0; padding:0; font:13px/1.5 Arial; text-align:center}
+body {margin:50px 0; padding:0; font:15px/1.5 Arial; text-align:center}
 table {width:960px; margin:0 auto 2rem; padding:0; border:2px solid #f5ba23}
 th {background:#f5ba23; color:#fff}
 th, td {padding:6px; border-right:1px solid #fcdc00; border-bottom:1px solid #fcdc00; text-align:center}
@@ -31,6 +31,8 @@ th, td {padding:6px; border-right:1px solid #fcdc00; border-bottom:1px solid #fc
     <h1>
         <a href="https://github.com/steking1207/tmm-move/archive/master.zip">所有檔案下載</a>
     </h1>
+<!--    <a href="#frontend">前台</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#prototype">Prototype</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#admin-design">後台管理系統(設計)</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#admin-online">後台管理系統(線上)</a>-->
+    <hr>
     <h2 id="frontend">前台</h2>
 <!--
     <h3>
@@ -658,7 +660,7 @@ th, td {padding:6px; border-right:1px solid #fcdc00; border-bottom:1px solid #fc
 </tr>
     </table>
 
-    <h2 id="admin">後台管理系統</h2>
+    <h2 id="admin-design">後台管理系統(設計)</h2>
 <table align="center" cellpadding="0" cellspacing="0">
 <tr>
   <th width="32%">頁面</th>
@@ -705,6 +707,226 @@ th, td {padding:6px; border-right:1px solid #fcdc00; border-bottom:1px solid #fc
   <td><a href="admin/tmpl-components.html">連結</a></td>
   <td class="tleft"></td>
 </tr>
+</table>
+
+    <h2 id="admin-online">後台管理系統(線上)</h2>
+<table align="center" cellpadding="0" cellspacing="0">
+<tr>
+  <th width="32%">頁面</th>
+  <th width="18%">Html</th>
+  <th>備註</th>
+</tr>
+<tr>
+  <td class="tleft">全站</td>
+  <td class="tleft" colspan="2">
+      <strong>修改</strong><br>
+      左側選單一律展開<br>
+左上方公告改到頁面上方<br>
+右上方拿掉人物照片<br><br>
+      <strong>建議修改</strong><br>
+      左側選單與右側標題相同
+    </td>
+</tr>
+    <tr>
+  <td class="tleft">登入</td>
+  <td><a href="http://120.124.72.214:8080/adm_sk2/Adm_login">連結</a></td>
+  <td class="tleft font-small">已改設計</td>
+</tr>
+<tr>
+  <td class="tleft">待辦清單</td>
+  <td><a href="http://120.124.72.214:8080/adm_sk2/Adm_login">連結</a></td>
+  <td class="tleft font-small">表格下方頁碼需修改</td>
+</tr>
+    <tr>
+        <td class="tleft">常用簽辦意見維護</td>
+        <td><a href="http://120.124.72.214:8080/adm_sk2/Adm_Memo_Self">連結</a></td>
+        <td class="tleft font-small">請參考頁面範例修改</td>
+    </tr>
+    <tr>
+        <td colspan="3" class="odd tleft">估價單表單管理</td>
+    </tr>
+    <tr>
+        <td class="tleft">估價單(填單)</td>
+        <td><a href="http://120.124.72.214:8080/adm_sk2/New_Form_Eva_Ste1">連結</a></td>
+        <td class="tleft font-small">之前已給過範例(<a href="https://steking1207.github.io/tmm-move/admin/Adm_Forms_BackCar_New_NonLogin.html">連結</a>)</td>
+    </tr>
+    <tr>
+        <td class="tleft">估價單表單查詢</td>
+        <td><a href="http://120.124.72.214:8080/adm_sk2/Form_Query">連結</a></td>
+        <td class="tleft font-small">請參考頁面範例修改</td>
+    </tr>
+    <tr>
+        <td colspan="3" class="odd tleft">回頭車表單管理</td>
+    </tr>
+    <tr>
+        <td class="tleft">回頭車(填單)</td>
+        <td><a href="http://120.124.72.214:8080/adm_sk2/New_Form_Back_Ste1">連結</a></td>
+        <td class="tleft font-small">同 [估價單(填單)] 作法</td>
+    </tr>
+    <tr>
+        <td class="tleft">回頭車表單查詢</td>
+        <td><a href="http://120.124.72.214:8080/adm_sk2/Form_Query_BackCar">連結</a></td>
+        <td class="tleft font-small">同 [估價單表單查詢] 作法</td>
+    </tr>
+    <tr>
+        <td class="tleft">回頭車車班維護</td>
+        <td><a href="http://120.124.72.214:8080/adm_sk2/Forms_BackCar_Schd_New">連結</a></td>
+        <td class="tleft font-small">請參考頁面範例修改<br>修改/刪除 也是相同方式</td>
+    </tr>
+    <tr>
+        <td colspan="3" class="odd tleft">會員資料管理</td>
+    </tr>
+    <tr>
+        <td class="tleft">查詢會員資料</td>
+        <td><a href="http://120.124.72.214:8080/adm_sk2/Form_Select_Member">連結</a></td>
+        <td class="tleft font-small">請參考頁面範例修改</td>
+    </tr>
+    <tr>
+        <td colspan="3" class="odd tleft">表單參數管理</td>
+    </tr>
+    <tr>
+        <td class="tleft">搬家地形代碼維護</td>
+        <td><a href="http://120.124.72.214:8080/adm_sk2/Adm_Terrain">連結</a></td>
+        <td class="tleft font-small">請參考頁面範例修改</td>
+    </tr>
+    <tr>
+        <td class="tleft">身分類別代碼維護</td>
+        <td><a href="http://120.124.72.214:8080/adm_sk2/Adm_cus_kind.aspx">連結</a></td>
+        <td class="tleft font-small">同上頁作法</td>
+    </tr>
+    <tr>
+        <td class="tleft">搬家折扣代碼維護</td>
+        <td><a href="http://120.124.72.214:8080/adm_sk2/Adm_Coupon_List.aspx">連結</a></td>
+        <td class="tleft font-small">請參考頁面範例修改</td>
+    </tr>
+
+    <tr>
+        <td colspan="3" class="odd tleft">功能管理</td>
+    </tr>
+    <tr>
+        <td class="tleft">遵守辦法維護</td>
+        <td><a href="http://120.124.72.214:8080/adm_sk2/Adm_Rule_Mst">連結</a></td>
+        <td class="tleft font-small">請參考頁面範例修改</td>
+    </tr>
+    <tr>
+        <td class="tleft">會議記錄維護維護</td>
+        <td><a href="http://120.124.72.214:8080/adm_sk2/Adm_Conf_Mst">連結</a></td>
+        <td class="tleft font-small">同 [遵守辦法維護] 作法</td>
+    </tr>
+    <tr>
+        <td class="tleft">推播通知維護</td>
+        <td><a href="http://120.124.72.214:8080/adm_sk2/Adm_FCM_Message">連結</a></td>
+        <td class="tleft font-small">請參考頁面範例修改<br>表格頁碼作法參照 [首頁]</td>
+    </tr>
+    <tr>
+        <td class="tleft">角色管理</td>
+        <td><a href="http://120.124.72.214:8080/adm_sk2/Adm_Sys_Roles">連結</a></td>
+        <td class="tleft font-small">請參考頁面範例修改</td>
+    </tr>
+    <tr>
+        <td class="tleft">帳號管理</td>
+        <td><a href="http://120.124.72.214:8080/adm_sk2/Adm_Sys_User">連結</a></td>
+        <td class="tleft font-small">請參考頁面範例修改</td>
+    </tr>
+    <tr>
+        <td class="tleft">公司管理</td>
+        <td><a href="http://120.124.72.214:8080/adm_sk2/Adm_Company_Mst">連結</a></td>
+        <td class="tleft font-small">請參考頁面範例修改<br>*因項目過多未將所有欄位做進，僅以幾項代表</td>
+    </tr>
+    <tr>
+        <td class="tleft">角色權限管理</td>
+        <td><a href="http://120.124.72.214:8080/adm_sk2/Adm_Role_Rights">連結</a></td>
+        <td class="tleft font-small">請參考頁面範例修改</td>
+    </tr>
+    <tr>
+        <td class="tleft">公告管理</td>
+        <td><a href="http://120.124.72.214:8080/adm_sk2/Adm_Board">連結</a></td>
+        <td class="tleft font-small">請參考頁面範例修改</td>
+    </tr>
+    <tr>
+        <td class="tleft">常用簽辦意見維護(共用)</td>
+        <td><a href="http://120.124.72.214:8080/adm_sk2/Adm_Memo_Tmm">連結</a></td>
+        <td class="tleft font-small">同 [遵守辦法維護] 作法</td>
+    </tr>
+
+    <tr>
+        <td colspan="3" class="odd tleft">首頁管理</td>
+    </tr>
+    <tr>
+        <td class="tleft">影音類別維護</td>
+        <td><a href="http://120.124.72.214:8080/adm_sk2/Adm_Video_Type">連結</a></td>
+        <td class="tleft font-small">請參考頁面範例修改</td>
+    </tr>
+    <tr>
+        <td class="tleft">影音資料維護</td>
+        <td><a href="http://120.124.72.214:8080/adm_sk2/Adm_Video_Type">連結</a></td>
+        <td class="tleft font-small">同 [影音類別維護] 作法</td>
+    </tr>
+    <tr>
+        <td class="tleft">搬家事類別維護</td>
+        <td><a href="http://120.124.72.214:8080/adm_sk2/Adm_News_Type">連結</a></td>
+        <td class="tleft font-small">同 [影音類別維護] 作法</td>
+    </tr>
+    <tr>
+        <td class="tleft">搬家事資料維護</td>
+        <td><a href="http://120.124.72.214:8080/adm_sk2/Adm_News_List">連結</a></td>
+        <td class="tleft font-small">請參考頁面範例修改</td>
+    </tr>
+    <tr>
+        <td class="tleft">FAQ類別維護</td>
+        <td><a href="http://120.124.72.214:8080/adm_sk2/Adm_FAQ_Type">連結</a></td>
+        <td class="tleft font-small">同 [影音類別維護] 作法</td>
+    </tr>
+    <tr>
+        <td class="tleft">FAQ資料維護</td>
+        <td><a href="http://120.124.72.214:8080/adm_sk2/Adm_FAQ_List">連結</a></td>
+        <td class="tleft font-small">同 [搬家事資料維護] 作法</td>
+    </tr>
+    <tr>
+        <td class="tleft">搬家法規別維護</td>
+        <td><a href="http://120.124.72.214:8080/adm_sk2/Adm_Law_Type">連結</a></td>
+        <td class="tleft font-small">同 [影音類別維護] 作法</td>
+    </tr>
+    <tr>
+        <td class="tleft">搬家知識資料維護</td>
+        <td><a href="http://120.124.72.214:8080/adm_sk2/Adm_Knowledge_List">連結</a></td>
+        <td class="tleft font-small">同 [搬家事資料維護] 作法</td>
+    </tr>
+    <tr>
+        <td class="tleft">輪播圖片管理</td>
+        <td><a href="http://120.124.72.214:8080/adm_sk2/Adm_Slide_PIC">連結</a></td>
+        <td class="tleft font-small">請參考頁面範例修改</td>
+    </tr>
+    <tr>
+        <td class="tleft">活動相簿管理</td>
+        <td><a href="http://120.124.72.214:8080/adm_sk2/Adm_Album">連結</a></td>
+        <td class="tleft font-small">請參考頁面範例修改</td>
+    </tr>
+
+    <tr class="odd">
+        <td class="tleft">樣板維護</td>
+        <td><a href="http://120.124.72.214:8080/adm_sk2/Adm_Mail_Templates?template_id=M1">連結</a></td>
+        <td class="tleft font-small">請參考頁面範例修改</td>
+    </tr>
+
+    <tr>
+        <td colspan="3" class="odd tleft">企業專區維護</td>
+    </tr>
+    <tr>
+        <td class="tleft">公司介紹</td>
+        <td><a href="http://120.124.72.214:8080/adm_sk2/Adm_Company_Cus?content_area=M1">連結</a></td>
+        <td class="tleft font-small">請參考頁面範例修改</td>
+    </tr>
+    <tr>
+        <td class="tleft">車型介紹</td>
+        <td><a href="http://120.124.72.214:8080/adm_sk2/Adm_Company_Cars">連結</a></td>
+        <td class="tleft font-small">請參考頁面範例修改</td>
+    </tr>
+    <tr>
+        <td class="tleft">自定義內容1~4</td>
+        <td><a href="http://120.124.72.214:8080/adm_sk2/Adm_Company_Cus?content_area=C1">連結</a></td>
+        <td class="tleft font-small">同 [公司介紹] 作法</td>
+    </tr>
 </table>
 </body>
 </html>
