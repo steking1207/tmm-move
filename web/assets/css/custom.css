@@ -375,6 +375,9 @@ select {
 #viewImg .modal-content {
   background: none; }
 
+.bg-evaluate-form {
+  background: url(../img/ui//evaluate-form.png) right 0% no-repeat; }
+
 .table th, .table td {
   vertical-align: middle !important; }
 
