@@ -96,29 +96,32 @@ select {
 
 .focus-nav .btn-lg {
   padding: .25rem .5rem;
-  border: 2px solid #fff; }
+  border: 2px solid #fff;
+  color: #fff !important; }
+.focus-nav .btn-lg .icon {
+  filter: brightness(0) invert(1); }
 .focus-nav .btn-lg:hover, .focus-nav .btn-lg:focus {
   color: #fff !important; }
 .focus-nav .btn-lg:hover .icon, .focus-nav .btn-lg:focus .icon {
-  filter: brightness(0) invert(1); }
+  filter: none; }
 .focus-nav .btn-company {
+  background: #136697; }
+.focus-nav .btn-company:hover, .focus-nav .btn-company:focus {
   background: rgba(19, 102, 151, 0.1);
   border-color: #136697;
   color: #136697 !important; }
-.focus-nav .btn-company:hover, .focus-nav .btn-company:focus {
-  background: #136697; }
 .focus-nav .btn-return {
+  background: #e60012; }
+.focus-nav .btn-return:hover, .focus-nav .btn-return:focus {
   background: rgba(230, 0, 18, 0.1);
   border-color: #e60012;
   color: #e60012 !important; }
-.focus-nav .btn-return:hover, .focus-nav .btn-return:focus {
-  background: #e60012; }
 .focus-nav .btn-calculater {
+  background: #f5ba23; }
+.focus-nav .btn-calculater:hover, .focus-nav .btn-calculater:focus {
   background: rgba(245, 186, 35, 0.1);
   border-color: #f5ba23;
   color: #f5ba23 !important; }
-.focus-nav .btn-calculater:hover, .focus-nav .btn-calculater:focus {
-  background: #f5ba23; }
 .focus-nav .input-group .form-control {
   height: 2.6rem; }
 
