@@ -377,6 +377,9 @@ select {
 
 .bg-evaluate-form {
   background: url(../img/ui//evaluate-form.png) right 0% no-repeat; }
+@media (max-width: 991.98px) {
+  .bg-evaluate-form {
+    background: none; } }
 
 .table th, .table td {
   vertical-align: middle !important; }
