@@ -523,7 +523,7 @@ small.text-row-2 {
   object-fit: contain; }
 
 #header a {
-  color: #666; }
+  color: #000; }
 #header a:hover, #header a.active {
   color: #136697; }
 #header #main-nav {
@@ -1276,6 +1276,8 @@ i.h1, i.h2, i.h3, i.h4, i.h5, i.h6 {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   /* enables momentum scrolling in iOS overflow elements */ }
+.pushy a {
+  color: #000; }
 .pushy ul:first-child {
   margin-top: 10px; }
 .pushy.pushy-left {
@@ -1347,8 +1349,6 @@ i.h1, i.h2, i.h3, i.h4, i.h5, i.h6 {
     opacity: 0; }
   100% {
     opacity: 1; } }
-/* Submenu Appearance */
-/* Submenu Movement */
 .fc {
   direction: ltr;
   text-align: left; }

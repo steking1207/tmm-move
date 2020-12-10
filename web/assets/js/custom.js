@@ -116,6 +116,9 @@ jQuery(document).ready(function($) {
         return false;
     });
 
+    $('#carousel-kv').carousel({
+        interval: 3000
+    });
     $(".carousel").swiperight(function() {
         $(".carousel").carousel('prev');
     });
