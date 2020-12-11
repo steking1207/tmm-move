@@ -137,7 +137,7 @@ select {
 #links a:hover, #links a:focus {
   text-decoration: underline; }
 #links li {
-  font-size: 0.875rem; }
+  font-size: 15px; }
 
 #copyright {
   background: #fadc91;
