@@ -381,6 +381,30 @@ select {
   .bg-evaluate-form {
     background: none; } }
 
+.accordion .media {
+  padding-right: 1.2rem;
+  align-items: center;
+  line-height: 1.2 !important; }
+.accordion .media .sign-q {
+  font-size: 25px;
+  color: #f18c1b; }
+.accordion .card {
+  border-top: 1px solid #dee2e6; }
+.accordion .card:first-child {
+  border-top: 0; }
+.accordion .card .card-header a:hover {
+  background: #fadc91; }
+.accordion [data-toggle="collapse"]:hover, .accordion [data-toggle="collapse"][aria-expanded="true"] {
+  background: #fff !important;
+  color: #000; }
+.accordion [data-toggle="collapse"]:hover .text, .accordion [data-toggle="collapse"][aria-expanded="true"] .text {
+  color: #f18c1b !important; }
+.accordion [data-toggle="collapse"][aria-expanded="false"] .text {
+  color: #343a40; }
+
+#section-qa [data-target="#qa1"] .text {
+  color: #f18c1b; }
+
 .table th, .table td {
   vertical-align: middle !important; }
 
@@ -623,6 +647,10 @@ small.text-row-2 {
 
 .link-decoration:hover, .link-decoration:focus {
   text-decoration: underline; }
+
+.btn:focus, .btn:active {
+  outline: none !important;
+  box-shadow: none; }
 
 [class^="icon-"], [class*="icon-"] {
   position: relative;
