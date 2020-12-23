@@ -60,7 +60,7 @@ jQuery(document).ready(function($) {
         stickTo: '.content',
         innerTop: -150,
         queries: {
-            980: {
+            991: {
                 disable: true
             }
         }
