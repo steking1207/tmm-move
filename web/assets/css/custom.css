@@ -394,10 +394,13 @@ select {
   border-top: 0; }
 .accordion .card .card-header a:hover {
   background: #fadc91; }
-.accordion [data-toggle="collapse"]:hover, .accordion [data-toggle="collapse"][aria-expanded="true"] {
+.accordion [data-toggle="collapse"]:hover {
+  background: #f5f5f5 !important;
+  color: #000; }
+.accordion [data-toggle="collapse"][aria-expanded="true"] {
   background: #fff !important;
   color: #000; }
-.accordion [data-toggle="collapse"]:hover .text, .accordion [data-toggle="collapse"][aria-expanded="true"] .text {
+.accordion [data-toggle="collapse"][aria-expanded="true"] .text {
   color: #f18c1b !important; }
 .accordion [data-toggle="collapse"][aria-expanded="false"] .text {
   color: #343a40; }
