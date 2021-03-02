@@ -549,6 +549,9 @@ small.text-row-2 {
   height: 80px;
   object-fit: contain; }
 
+.img-fit {
+  object-fit: cover; }
+
 #header a {
   color: #000; }
 #header a:hover, #header a.active {
