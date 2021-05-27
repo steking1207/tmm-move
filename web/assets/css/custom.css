@@ -77,6 +77,9 @@ select {
   .col-recommend .h4 {
     font-size: 0.93rem; } }
 
+#kv {
+  overflow: hidden; }
+
 #header {
   z-index: 10;
   background: #fffaef; }
@@ -427,10 +430,13 @@ select {
   .table-furniture .td-action {
     width: 15%; } }
 @media (max-width: 991.98px) {
+  .table-furniture td {
+    padding-left: 5px;
+    padding-right: 5px; }
   .table-furniture .td-name {
-    width: 50%; }
+    width: 45%; }
   .table-furniture .td-count {
-    width: 25%; }
+    width: 35%; }
   .table-furniture .td-size {
     display: none; }
   .table-furniture .td-action {
