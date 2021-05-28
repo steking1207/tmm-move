@@ -425,7 +425,7 @@ select {
 @media (max-width: 1199.98px) {
   .table-furniture .td-count {
     width: 20%; }
-  .table-furniture .td-desc {
+  .table-furniture .td-desc, .table-furniture tbody .td-action {
     display: none; }
   .table-furniture .td-action {
     width: 15%; } }
